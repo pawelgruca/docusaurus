@@ -1,0 +1,91 @@
+---
+title: "13. Zarządzanie dostawcami"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** pełny dostęp
+-   **Operator Systemu:** brak dostępu
+-   **Gospodarz:** pełny dostęp
+-   **Opiekun Jednostki:** brak dostępu
+-   **Reporter:** brak dostępu
+
+Dostawcy są kluczowym elementem systemu e-Sklep, odpowiedzialnym za realizację zamówień składanych przez jednostki organizacyjne. Użytkownicy z odpowiednimi uprawnieniami mają możliwość przeglądania, dodawania, edytowania oraz archiwizowania dostawców, a także monitorowania ich ofert i zamówień.
+
+## 13.1. Przeglądanie listy dostawców \{#sekcja-13-1-przegladanie-listy-dostawcow}
+
+<Access roles="Gospodarz" />
+
+Aby uzyskać dostęp do listy wszystkich dostawców w systemie, menu głównym (po lewej stronie ekranu) wybierz opcję **Dostawcy**. System wyświetli ekran z listą wszystkich dostępnych dostawców:
+
+![Zrzut ekranu](/img/podrecznik/img-089.png)
+
+## 13.2. Filtrowanie dostawców \{#sekcja-13-2-filtrowanie-dostawcow}
+
+<Access roles="Gospodarz" />
+
+Aby szybko znaleźć konkretnych dostawców, użyj panelu filtrów znajdującego się powyżej listy dostawców. Po ustawieniu filtrów lista dostawców automatycznie się odświeży.
+
+![Zrzut ekranu](/img/podrecznik/img-090.png)
+
+## 13.3. Dodawanie nowego dostawcy \{#sekcja-13-3-dodawanie-nowego-dostawcy}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-091.png)
+
+Aby dodać nowego dostawcę do systemu:
+
+1.  W menu głównym wybierz opcję **Dostawcy**.
+2.  Kliknij przycisk **Dodaj dostawcę** znajdujący się w prawym górnym rogu ekranu.
+3.  System wyświetli formularz dodawania nowego dostawcy.
+4.  Wypełnij wymagane pola.
+5.  Po uzupełnieniu wszystkich wymaganych informacji, kliknij przycisk **Zapisz**, aby dodać dostawcę do systemu.
+
+## 13.4. Szczegóły dostawcy \{#sekcja-13-4-szczegoly-dostawcy}
+
+<Access roles="Gospodarz" />
+
+Aby zobaczyć szczegółowe informacje dotyczące konkretnego dostawcy, kliknij we właściwy wiersz w tabeli z listą dostawców lub kliknij ikonę trzech kropek (⋮) na końcu wiersza i wybierz opcję **Edytuj**. System wyświetli formularz ze szczegółami dostawcy: nazwą, NIP-em, adresem e-mail, numerem telefonu oraz danymi adresowymi.
+
+![Zrzut ekranu](/img/podrecznik/img-092.png)
+
+## 13.5. Usuwanie dostawcy \{#sekcja-13-5-usuwanie-dostawcy}
+
+<Access roles="Gospodarz" />
+
+1.  Z widoku tabeli wybierz konkretnego dostawcę, klikając na odpowiedni wiersz lub korzystając z opcji ikony trzech kropek (⋮) wybierając opcję **Usuń**.
+2.  System wyświetli okno dialogowe z prośbą o potwierdzenie operacji.
+3.  Kliknij **Potwierdź**, aby zatwierdzić usunięcie dostawcy
+
+![Zrzut ekranu](/img/podrecznik/img-093.png)
+
+## 13.6. Archiwizacja dostawcy \{#sekcja-13-6-archiwizacja-dostawcy}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-094.png)
+
+Dostawcy, którzy nie są już aktywni, ale mają historię zamówień, mogą zostać zarchiwizowani:
+
+1.  Z widoku tabeli wybierz konkretnego dostawcę, klikając na odpowiedni wiersz lub korzystając z opcji ikony trzech kropek (⋮) wybierając opcję **Archiwizuj**.
+2.  System wyświetli okno dialogowe z prośbą o potwierdzenie operacji i możliwością wprowadzenia powodu archiwizacji.
+3.  Kliknij **Archiwizuj**, aby zatwierdzić operację.
+
+**Ważne:** Zarchiwizowany dostawca nie będzie dostępny podczas tworzenia nowych zamówień, ale wszystkie historyczne dane związane z tym dostawcą pozostaną w systemie i będą widoczne w raportach.
+
+## 13.7. Eksportowanie listy dostawców \{#sekcja-13-7-eksportowanie-listy-dostawcow}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-095.png)
+
+System e-Sklep umożliwia eksport listy dostawców do arkusza kalkulacyjnego, co jest przydatne do dalszej analizy danych lub raportowania:
+
+1.  W menu bocznym wybierz opcję **Dostawcy**, aby wyświetlić listę wszystkich dostępnych dostawców.
+2.  (Opcjonalnie) Zastosuj odpowiednie filtry, aby zawęzić listę do interesujących Cię dostawców.
+3.  W prawym górnym rogu ekranu znajdziesz ikonę pobierania
+4.  Kliknij ikonę pobierania, aby wyeksportować listę dostawców do pliku Excel.
+5.  System wygeneruje plik, który zostanie automatycznie pobrany przez Twoją przeglądarkę.
+
+**Ważne:** Jeśli przed eksportem zastosujesz filtry na liście dostawców, te same filtry zostaną uwzględnione podczas generowania pliku Excel. Oznacza to, że plik będzie zawierał dokładnie tych samych dostawców, których aktualnie widzisz na ekranie.

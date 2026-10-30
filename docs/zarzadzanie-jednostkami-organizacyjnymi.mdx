@@ -1,0 +1,248 @@
+---
+title: "7. Zarządzanie jednostkami organizacyjnymi"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** pełny dostęp
+-   **Operator Systemu:** brak dostępu
+-   **Gospodarz:** pełny dostęp
+-   **Opiekun Jednostki:** brak dostępu
+-   **Reporter:** brak dostępu
+
+W systemie e-Sklep użytkownicy z odpowiednimi uprawnieniami odpowiadają za zarządzanie jednostkami organizacyjnymi. W tej sekcji dowiesz się, jak przeglądać, dodawać i edytować jednostki, przypisywać im użytkowników oraz zarządzać ich konfiguracją w systemie.
+
+## 7.1. Przeglądanie listy jednostek organizacyjnych \{#sekcja-7-1-przegladanie-listy-jednostek-organizacyjnych}
+
+<Access roles="Gospodarz" />
+
+Każda jednostka organizacyjna to oddzielna jednostka administracyjna korzystająca z systemu e-Sklep. Jako użytkownik z odpowiednimi uprawnieniami możesz zarządzać tylko tymi jednostkami, do których masz przypisane uprawnienia. W menu głównym (po lewej stronie ekranu) wybierz opcję **Jednostki**; system wyświetli ekran z listą wszystkich jednostek, do których masz dostęp.
+
+![Zrzut ekranu](/img/podrecznik/img-033.png)
+
+## 7.2. Filtrowanie jednostek organizacyjnych \{#sekcja-7-2-filtrowanie-jednostek-organizacyjnych}
+
+<Access roles="Gospodarz" />
+
+Aby szybko znaleźć konkretne jednostki użyj panelu filtrów znajdującego się powyżej listy jednostek; po ustawieniu filtrów lista jednostek automatycznie się odświeży.
+
+![Zrzut ekranu](/img/podrecznik/img-034.png)
+
+## 7.3. Dodawanie i edycja danych jednostek \{#sekcja-7-3-dodawanie-i-edycja-danych-jednostek}
+
+<Access roles="Gospodarz" />
+
+Użytkownicy z odpowiednimi uprawnieniami mogą aktualizować dane jednostek organizacyjnych, takie jak ich nazwa, dane kontaktowe oraz inne parametry.
+
+### Dodawanie nowej jednostki \{#dodawanie-nowej-jednostki}
+
+1.  W menu bocznym wybierz opcję **Jednostki**. Wyświetli się lista wszystkich dostępnych jednostek w systemie.
+2.  Kliknij przycisk **Dodaj jednostkę** znajdujący się w prawym górnym rogu ekranu.
+3.  Wypełnij wymagane pola w formularzu
+4.  Po uzupełnieniu wszystkich wymaganych informacji, kliknij przycisk **Zapisz**, aby dodać jednostkę do systemu.
+
+![Zrzut ekranu](/img/podrecznik/img-035.png)
+
+### Edycja istniejącej jednostki \{#edycja-istniejacej-jednostki}
+
+1.  Wyszukaj jednostkę na liście, korzystając z filtrów jeśli to konieczne.
+2.  Otwórz szczegóły jednostki, klikając wiersz wybranej jednostki albo wybierając opcję **Edytuj** z menu trzech kropek (⋮) na końcu tego wiersza.
+3.  System wyświetli formularz z danymi jednostki, które możesz modyfikować.
+4.  Wprowadź niezbędne zmiany w polach formularza.
+5.  Kliknij przycisk **Zapisz**, aby zatwierdzić zmiany.
+
+![Zrzut ekranu](/img/podrecznik/img-036.png)
+
+## 7.4. Zarządzanie atrybutami jednostki \{#sekcja-7-4-zarzadzanie-atrybutami-jednostki}
+
+<Access roles="Gospodarz" />
+
+Funkcjonalność umożliwia definiowanie szczegółowych atrybutów dla jednostek organizacyjnych, co pozwala na dokładniejszą charakterystykę poszczególnych placówek i ich specyfiki.
+
+1.  W widoku szczegółów jednostki przejdź do sekcji **Atrybuty**.
+2.  Wprowadź odpowiednie wartości dla interesujących Cię atrybutów.
+3.  Kliknij przycisk **Zapisz**, aby zatwierdzić zmiany.
+
+![Zrzut ekranu](/img/podrecznik/img-037.png)
+
+**Wskazówka:** Atrybuty jednostki są szczególnie przydatne podczas generowania raportów oraz planowania dostaw, gdyż pozwalają na lepsze dopasowanie produktów i usług do specyfiki danej placówki. Raportem pokazującym wartości atrybutów dla poszczególnych jednostek jest raport **Zestawienie analityczne: Szczegóły zamówień i reklamacji (Raport Gospodarza).**
+
+## 7.5. Zarządzanie kategoriami jednostki \{#sekcja-7-5-zarzadzanie-kategoriami-jednostki}
+
+<Access roles="Operator Systemu, Gospodarz" />
+
+Funkcjonalność umożliwia przypisywanie określonych kategorii do jednostek organizacyjnych, co pozwala na dostosowanie dostępnych produktów i usług do potrzeb konkretnych placówek.
+
+1.  W widoku szczegółów jednostki przejdź do sekcji **Kategorie**.
+2.  System wyświetli listę dostępnych kategorii produktów i usług z możliwością zaznaczenia tych, które mają być przypisane do danej jednostki.
+3.  Zaznacz odpowiednie kategorie zgodnie z profilem działalności jednostki.
+4.  Po dokonaniu wyboru kliknij przycisk **Zapisz**, aby zatwierdzić zmiany.
+
+**Ważne:** Przypisanie kategorii do jednostki determinuje, jakie produkty i usługi będą dostępne dla użytkowników z tej jednostki podczas składania zapotrzebowań.
+
+![Zrzut ekranu](/img/podrecznik/img-038.png)
+
+## 7.6. Zarządzanie produktami jednostki \{#sekcja-7-6-zarzadzanie-produktami-jednostki}
+
+<Access roles="Gospodarz" />
+
+Funkcjonalność umożliwia precyzyjne określanie, które produkty z wybranych kategorii będą dostępne dla konkretnej jednostki organizacyjnej, wraz z konfiguracją parametrów dostępności i limitu ilościowego.
+
+![Zrzut ekranu](/img/podrecznik/img-039.png)
+
+-   W widoku szczegółów jednostki przejdź do sekcji **Produkty**.
+-   Kliknij przycisk **Zarządzaj produktami**.
+-   Wybierz kategorię z listy rozwijanej.
+-   Możesz zaznaczyć opcję **Wszystkie produkty** w ramach wybranej kategorii lub wybrać poszczególne produkty.
+-   Dla każdego produktu, który ma być dostępny dla jednostki:
+    -   Zaznacz pole wyboru przy nazwie produktu
+    -   Określ dostępność produktu w trybie interwencyjnym (tak/nie)
+    -   Zdefiniuj dostępną ilość produktu w ramach kategorii dla tej jednostki
+-   Po dokonaniu wyboru i konfiguracji produktów, kliknij przycisk **Zapisz**, aby zatwierdzić zmiany.
+
+![Zrzut ekranu](/img/podrecznik/img-040.png)
+
+## 7.7. Zarządzanie adresami jednostki \{#sekcja-7-7-zarzadzanie-adresami-jednostki}
+
+<Access roles="Gospodarz" />
+
+Funkcjonalność umożliwia definiowanie wielu adresów dla jednej jednostki organizacyjnej, co jest szczególnie przydatne w przypadku placówek posiadających oddziały, filie lub inne lokalizacje.
+
+W widoku szczegółów jednostki przejdź do sekcji **Adresy**; wyświetli się lista istniejących adresów przypisanych do jednostki.
+
+Aby dodać nowy adres:
+
+-   Kliknij przycisk **Dodaj nowy adres**,
+-   Wypełnij formularz,
+-   Kliknij **Zapisz**.
+
+Aby edytować istniejący adres:
+
+-   Kliknij na adres, który chcesz zmodyfikować,
+-   Wprowadź zmiany w formularzu,
+-   Kliknij **Zapisz**.
+
+Aby usunąć adres:
+
+Kliknij na adres, który chcesz zmodyfikować,
+
+Potwierdź operację w oknie dialogowym.
+
+![Zrzut ekranu](/img/podrecznik/img-041.png)
+
+## 7.8. Jednostki podrzędne \{#sekcja-7-8-jednostki-podrzedne}
+
+<Access roles="Gospodarz" />
+
+Funkcjonalność ta pozwala na tworzenie hierarchii jednostek w systemie, gdzie jednostki nadrzędne mogą zarządzać jednostkami podrzędnymi.
+
+-   W widoku szczegółów jednostki przejdź do sekcji **Jednostki podrzędne**.
+-   Wyświetli się lista istniejących jednostek podrzędnych przypisanych do jednostki.
+-   Aby dodać nową jednostkę:
+    -   Kliknij przycisk **Dodaj jednostkę podrzędną**
+    -   Wypełnij formularz
+    -   Kliknij **Zapisz**
+-   Aby edytować istniejącą jednostkę podrzędną:
+    -   Kliknij na adres, który chcesz zmodyfikować lub kliknij ikonę trzech kropek (⋮) na końcu wiersza i wybierz opcję **Edytuj**.
+    -   Wprowadź zmiany w formularzu
+    -   Kliknij **Zapisz**
+-   Aby usunąć jednostkę podrzędną, wybierz opcję **Usuń** z menu trzech kropek (⋮) na końcu jej wiersza i potwierdź operację w oknie dialogowym.
+
+![Zrzut ekranu](/img/podrecznik/img-042.png)
+
+## 7.9. Użytkownicy jednostki \{#sekcja-7-9-uzytkownicy-jednostki}
+
+<Access roles="Gospodarz" />
+
+Funkcjonalność umożliwia zarządzanie użytkownikami przypisanymi do konkretnej jednostki organizacyjnej. Widok prezentuje listę wszystkich użytkowników w formie tabeli z możliwością filtrowania i sortowania danych. W widoku szczegółów jednostki przejdź do sekcji **Użytkownicy**; wyświetli się tabela z listą wszystkich użytkowników przypisanych do jednostki.
+
+Aby filtrować listę użytkowników:
+
+-   Użyj pól filtrów dostępnych nad tabelą,
+-   Wprowadź kryteria wyszukiwania (np. imię, nazwisko, email),
+-   Lista zostanie automatycznie zaktualizowana.
+
+Aby sortować użytkowników kliknij nagłówek właściwej kolumny. Ponowne kliknięcie zmieni kierunek sortowania.
+
+Aby edytować dane użytkownika:
+
+-   Kliknij na wybranego użytkownika w tabeli,
+-   Wprowadź zmiany w formularzu,
+-   Kliknij **Zapisz.**
+
+![Zrzut ekranu](/img/podrecznik/img-043.png)
+
+## 7.10. Zamówienia jednostki \{#sekcja-7-10-zamowienia-jednostki}
+
+<Access roles="Gospodarz" />
+
+Funkcjonalność umożliwia przeglądanie i zarządzanie wszystkimi zamówieniami złożonymi w ramach konkretnej jednostki organizacyjnej. Widok prezentuje listę zamówień w formie tabeli z możliwością filtrowania, eksportowania oraz przeglądania szczegółów.
+
+W widoku szczegółów jednostki przejdź do sekcji **Zamówienia**; wyświetli się tabela z listą wszystkich zamówień w ramach jednostki.
+
+Aby filtrować listę zamówień:
+
+-   Użyj pól filtrów dostępnych nad tabelą,
+-   Wprowadź kryteria wyszukiwania (np. numer zamówienia, data, status),
+-   Lista zostanie automatycznie zaktualizowana.
+
+Aby sortować zamówienia kliknij na nagłówek kolumny, według której chcesz sortować. Ponowne kliknięcie zmieni kierunek sortowania
+
+Aby przeglądać szczegóły zamówienia:
+
+-   Kliknij na wybrane zamówienie w tabeli,
+-   Otworzy się widok ze szczegółowymi informacjami o zamówieniu,
+-   W widoku szczegółów możesz przeglądać wszystkie dane zamówienia, pozycje oraz historię zmian.
+
+![Zrzut ekranu](/img/podrecznik/img-044.png)
+
+## 7.11. Dokumenty jednostki \{#sekcja-7-11-dokumenty-jednostki}
+
+<Access roles="Gospodarz" />
+
+Funkcjonalność umożliwia zarządzanie dokumentami przypisanymi do konkretnej jednostki organizacyjnej. Widok prezentuje listę wszystkich dokumentów w formie tabeli z możliwością filtrowania, wyszukiwania oraz pobierania plików.
+
+W widoku szczegółów jednostki przejdź do sekcji **Dokumenty**; wyświetli się tabela z listą wszystkich dokumentów przypisanych do jednostki.
+
+Aby filtrować listę dokumentów:
+
+-   Użyj pola **Nazwa** do wyszukiwania po nazwie dokumentu,
+-   Użyj pola **Umowa** do filtrowania według typu umowy/dokumentu,
+-   Lista zostanie automatycznie zaktualizowana zgodnie z wprowadzonymi kryteriami.
+
+Aby sortować dokumenty kliknij na nagłówek kolumny, według której chcesz sortować. Ponowne kliknięcie zmieni kierunek sortowania
+
+Aby **pobrać dokument**, kliknij ikonę pobierania w prawej kolumnie tabeli. Plik zostanie pobrany na dysk lokalny
+
+![Zrzut ekranu](/img/podrecznik/img-045.png)
+
+## 7.12. Archiwizowanie jednostki \{#sekcja-7-12-archiwizowanie-jednostki}
+
+<Access roles="Gospodarz" />
+
+Rekord jednostki może zostać zarchiwizowany. Zarchiwizowana jednostka nie ma możliwości zgłaszania nowych zapotrzebowań i zamówień; dostęp do historii zamówień i dokumentów jednostki zostaje zachowany, a jednostka może zostać ponownie aktywowana w przyszłości, jeśli zajdzie taka potrzeba.
+
+Aby zarchiwizować dany rekord:
+
+1.  Wyszukaj jednostkę na liście.
+2.  Kliknij ikonę trzech kropek (⋮) na końcu wiersza i wybierz opcję **Archiwizuj**
+3.  System poprosi o potwierdzenie operacji
+4.  Kliknij **Potwierdź**, aby zatwierdzić archiwizację.
+
+![Zrzut ekranu](/img/podrecznik/img-046.png)
+
+## 7.13. Eksportowanie listy jednostek \{#sekcja-7-13-eksportowanie-listy-jednostek}
+
+<Access roles="Gospodarz" />
+
+System e-Sklep umożliwia eksport listy jednostek do arkusza kalkulacyjnego, co jest przydatne do dalszej analizy danych lub raportowania:
+
+1.  W menu bocznym wybierz opcję **Jednostki**, aby wyświetlić listę wszystkich dostępnych jednostek.
+2.  (Opcjonalnie) Zastosuj odpowiednie filtry, aby zawęzić listę do interesujących Cię jednostek.
+3.  W prawym górnym rogu ekranu znajdziesz ikonę pobierania
+4.  Kliknij ikonę pobierania, aby wyeksportować listę jednostek do pliku Excel.
+5.  System wygeneruje plik, który zostanie automatycznie pobrany przez Twoją przeglądarkę.
+
+![Zrzut ekranu](/img/podrecznik/img-047.png)
+
+**Ważne:** Jeśli przed eksportem zastosujesz filtry na liście jednostek, te same filtry zostaną uwzględnione podczas generowania pliku Excel. Oznacza to, że plik będzie zawierał dokładnie te same jednostki, które aktualnie widzisz na ekranie.

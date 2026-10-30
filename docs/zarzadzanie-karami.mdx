@@ -1,0 +1,128 @@
+---
+title: "17. Zarządzanie karami"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** pełny dostęp
+-   **Operator Systemu:** brak dostępu
+-   **Gospodarz:** pełny dostęp
+-   **Opiekun Jednostki:** brak dostępu
+-   **Reporter:** brak dostępu
+
+Kary umowne są ważnym mechanizmem egzekwowania warunków zawartych w umowach z dostawcami. Użytkownicy z odpowiednimi uprawnieniami mają możliwość zarządzania karami nakładanymi na dostawców w przypadku niewywiązania się z warunków umowy, z możliwością zarówno ręcznego wprowadzania kar, jak i ich automatycznego generowania na podstawie parametrów określonych w umowie.
+
+## 17.1. Przeglądanie kar \{#sekcja-17-1-przegladanie-kar}
+
+<Access roles="Gospodarz" />
+
+Aby uzyskać dostęp do listy wszystkich kar dostawców w systemie:
+
+W menu głównym (po lewej stronie ekranu) wybierz opcję **Kary umowne**. System wyświetli ekran z listą wszystkich kar.
+
+![Zrzut ekranu](/img/podrecznik/img-136.png)
+
+## 17.2. Filtrowanie kar \{#sekcja-17-2-filtrowanie-kar}
+
+<Access roles="Gospodarz" />
+
+Aby szybko znaleźć konkretne kary:
+
+Skorzystaj z panelu filtrów znajdującego się powyżej listy kar. Po ustawieniu filtrów lista kar automatycznie się odświeży.
+
+![Zrzut ekranu](/img/podrecznik/img-137.png)
+
+## 17.3. Ręczne dodawanie kary \{#sekcja-17-3-reczne-dodawanie-kary}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-138.png)
+
+Jeśli zidentyfikujesz sytuację, w której dostawca nie wywiązał się z warunków umowy, możesz ręcznie nałożyć karę:
+
+1.  W menu głównym wybierz opcję **Kary umowne**.
+2.  Kliknij przycisk **Dodaj karę** znajdujący się w prawym górnym rogu ekranu.
+3.  System wyświetli formularz dodawania nowej kary.
+4.  W formularzu dodawania kary wypełnij wymagane pola:
+    1.  **Umowa** - wybierz z listy rozwijanej umowę, której dotyczy kara
+    2.  **Kwota kary (PLN)** - wprowadź wartość kary w złotych polskich
+    3.  **Powód nałożenia kary** - wprowadź szczegółowe uzasadnienie nałożenia kary
+5.  Po uzupełnieniu wszystkich wymaganych informacji, kliknij przycisk **Zapisz**, aby dodać karę do systemu.
+
+![Zrzut ekranu](/img/podrecznik/img-139.png)
+
+**Ważne:** Dokładne uzasadnienie kary jest kluczowe, ponieważ może być ono weryfikowane w przypadku ewentualnego sporu z dostawcą. Zawsze podawaj konkretne naruszenie umowy oraz odpowiedni zapis z umowy, który został naruszony.
+
+## 17.4. Automatyczne generowanie kar \{#sekcja-17-4-automatyczne-generowanie-kar}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-140.png)
+
+System e-Sklep może automatycznie generować kary na podstawie parametrów określonych w umowie oraz danych o dostawach:
+
+1.  W menu głównym wybierz opcję **Kary umowne**.
+2.  Kliknij przycisk **Generuj kary** znajdujący się w górnej części ekranu.
+3.  System wyświetli formularz generowania kar.
+4.  W formularzu generowania kar wypełnij wymagane pola:
+    1.  **Umowa** - wybierz umowę, której mają dotyczyć kary
+    2.  **Data od** - określ początek okresu, za który mają zostać wygenerowane kary
+    3.  **Data do** - określ koniec okresu, za który mają zostać wygenerowane kary
+5.  Kliknij przycisk **Generuj**, aby system automatycznie wyliczył i wygenerował kary na podstawie warunków umowy.
+
+![Zrzut ekranu](/img/podrecznik/img-141.png)
+
+**Jak działa automatyczne generowanie kar?** System analizuje wszystkie zamówienia w wybranym okresie i sprawdza, czy wystąpiły naruszenia warunków umowy, takie jak:
+
+-   Opóźnienia w dostawie (porównanie planowanej i faktycznej daty dostawy)
+-   Braki ilościowe (porównanie zamówionej i dostarczonej ilości)
+-   Niezgodności jakościowe (na podstawie zarejestrowanych reklamacji)
+
+Dla każdego wykrytego naruszenia system tworzy odpowiednią karę z automatycznie wyliczoną kwotą zgodnie z parametrami określonymi w umowie.
+
+## 17.5. Szczegóły kary \{#sekcja-17-5-szczegoly-kary}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-142.png)
+
+Aby zobaczyć szczegółowe informacje dotyczące konkretnej kary, z widoku tabeli wybierz konkretną karę, wykonując jedną z poniższych czynności kliknij bezpośrednio na wiersz z wybraną karą lub kliknij ikonę trzech kropek (⋮) na końcu wiersza i wybierz opcję **Edytuj**. System wyświetli ekran ze szczegółami kary
+
+## 17.6. Edytowanie kary \{#sekcja-17-6-edytowanie-kary}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-143.png)
+
+Możesz modyfikować kary, które nie zostały jeszcze zaakceptowane:
+
+1.  Z widoku tabeli wybierz konkretną karę, klikając na odpowiedni wiersz lub korzystając z opcji ikony trzech kropek (⋮) wybierając opcję **Edytuj**.
+2.  System wyświetli formularz z aktualnymi danymi kary.
+3.  Wprowadź niezbędne zmiany w polach formularza.
+4.  Kliknij przycisk **Zapisz**, aby zatwierdzić modyfikacje.
+
+## 17.7. Masowe akceptowanie kar \{#sekcja-17-7-masowe-akceptowanie-kar}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-144.png)
+
+Aby zaakceptować wiele kar jednocześnie:
+
+1.  W widoku listy kar dostawców zaznacz wybrane kary za pomocą pól wyboru przy pozycjach w tabeli albo zaznacz wszystkie widoczne kary za pomocą pola wyboru w nagłówku tabeli.
+2.  Kliknij przycisk **Akceptuj kary** znajdujący się powyżej tabeli.
+3.  System wyświetli okno dialogowe z prośbą o potwierdzenie operacji.
+4.  Kliknij **Potwierdź**, aby zaakceptować zaznaczone kary.
+
+## 17.8. Masowe usuwanie kar \{#sekcja-17-8-masowe-usuwanie-kar}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-145.png)
+
+Aby usunąć wiele kar jednocześnie:
+
+1.  W widoku listy kar dostawców zaznacz wybrane kary za pomocą pól wyboru przy pozycjach w tabeli albo zaznacz wszystkie widoczne kary za pomocą pola wyboru w nagłówku tabeli.
+2.  Kliknij przycisk **Usuń kary** znajdujący się powyżej tabeli.
+3.  System wyświetli okno dialogowe z prośbą o potwierdzenie operacji.
+4.  Kliknij **Potwierdź**, aby usunąć zaznaczone kary.

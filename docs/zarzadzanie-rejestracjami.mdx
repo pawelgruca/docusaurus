@@ -1,0 +1,79 @@
+---
+title: "23. Zarządzanie rejestracjami"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** pełny dostęp
+-   **Operator Systemu:** brak dostępu
+-   **Gospodarz:** brak dostępu
+-   **Opiekun Jednostki:** brak dostępu
+-   **Reporter:** brak dostępu
+
+Funkcjonalność umożliwia przeglądanie, filtrowanie oraz zarządzanie wnioskami rejestracyjnymi użytkowników, którzy zgłosili chęć utworzenia konta w systemie.
+
+Wnioski o rolę Operatora Jednostki wymagają najpierw wstępnej akceptacji Dyrektora wskazanej jednostki. Następnie trafiają do Administratora Systemu w celu podjęcia decyzji ostatecznej. Wnioski o rolę Dyrektora Jednostki trafiają bezpośrednio do Administratora Systemu, bez etapu wstępnej akceptacji.
+
+## 23.1. Filtrowanie listy rejestracji \{#sekcja-23-1-filtrowanie-listy-rejestracji}
+
+<Access roles="Administrator Systemu" />
+
+1.  Na ekranie listy rejestracji możesz filtrować wnioski rejestracji
+
+![Zrzut ekranu](/img/podrecznik/img-181.png)
+
+## 23.2. Przeglądanie listy rejestracji \{#sekcja-23-2-przegladanie-listy-rejestracji}
+
+<Access roles="Administrator Systemu" />
+
+![Zrzut ekranu](/img/podrecznik/img-182.png)
+
+1.  W menu bocznym wybierz opcję Rejestracje, aby wyświetlić listę dostępnych wniosków rejestracyjnych.
+2.  System wyświetli listę ostatnich rejestracji w systemie.
+3.  Na liście widoczne są podstawowe informacje o wnioskach rejestracyjnych wraz z ich aktualnym statusem.
+
+Wnioski oczekujące na wstępną decyzję Dyrektora nie są jeszcze widoczne w module **Rejestracje**. Po jego akceptacji wniosek Operatora pojawia się ze statusem **Przetwarzanie**.
+
+Wniosek odrzucony przez Dyrektora może być widoczny ze statusem **Odrzucony** i oznaczeniem **przez Przełożonego**; jest zakończony i nie można go ponownie zaakceptować ani odrzucić.
+
+## 23.3. Przeglądanie i edycja rejestracji \{#sekcja-23-3-przegladanie-i-edycja-rejestracji}
+
+<Access roles="Administrator Systemu" />
+
+![Decyzja wstępna Dyrektora i decyzja końcowa administracji w szczegółach istniejącego wniosku o dostęp.](/img/podrecznik/img-183.png)
+
+Otwórz szczegóły rejestracji, klikając wiersz wybranej rejestracji albo wybierając opcję **Edytuj** z menu trzech kropek (⋮) na końcu tego wiersza.
+
+System wyświetli szczegóły rejestracji zawierające:
+
+-   Dane podstawowe (data rejestracji, status)
+-   Dane użytkownika (imię, nazwisko, e-mail)
+-   Status aktywności konta
+-   **Decyzja wstępna** — osoba podejmująca decyzję, data decyzji i komentarz Dyrektora, jeśli został wpisany.
+-   **Decyzja końcowa** — osoba podejmująca decyzję, data decyzji i komentarz Administratora Systemu, jeśli została już podjęta decyzja końcowa.
+
+Sekcje **Decyzja wstępna** i **Decyzja końcowa** są wyświetlane, gdy wniosek zawiera dane danej decyzji. Brak sekcji **Decyzja wstępna** przy rejestracji Dyrektora Jednostki jest prawidłowy — taki wniosek trafia bezpośrednio do Administratora Systemu.
+
+## 23.4. Akceptacja lub odrzucenie rejestracji \{#sekcja-23-4-akceptacja-lub-odrzucenie-rejestracji}
+
+<Access roles="Administrator Systemu" />
+
+![Zrzut ekranu](/img/podrecznik/img-184.png)
+
+Administrator Systemu podejmuje ostateczną decyzję w sprawie wniosków o statusie **Przetwarzanie**. Wniosek o rolę Operatora Jednostki trafia do niego po wstępnej akceptacji Dyrektora jednostki wskazanej we wniosku. Wniosek o rolę Dyrektora Jednostki trafia bezpośrednio do Administratora Systemu.
+
+Kliknij przycisk **Akceptuj**. W oknie **Akceptuj wniosek** możesz opcjonalnie wpisać **Komentarz**. Ponownie kliknij **Akceptuj**, aby zatwierdzić rejestrację i aktywować konto użytkownika.
+
+Kliknij przycisk **Odrzuć**. W oknie **Odrzuć wniosek** wpisz wymagany **Powód odrzucenia** i potwierdź decyzję przyciskiem **Odrzuć**. Przycisk **Anuluj** zamyka okno decyzji bez zapisywania zmian.
+
+Po zaakceptowaniu rejestracji:
+
+-   System aktywuje konto przygotowane podczas rejestracji i nadaje użytkownikowi właściwą rolę w wybranej jednostce.
+-   Użytkownik otrzymuje powiadomienie e-mail o aktywacji konta.
+-   Konto pojawia się na liście **Użytkownicy** ze statusem **Aktywny**
+
+**Ważne:** Akceptacja rejestracji nie wymaga ręcznego tworzenia konta — system aktywuje konto przygotowane na podstawie danych z wniosku.
+
+O końcowej akceptacji lub odrzuceniu system informuje e-mailem wnioskodawcę oraz Dyrektora, który wcześniej wstępnie zaakceptował wniosek, jeżeli taki etap wystąpił. W przypadku odrzucenia wymagany powód wpisany w oknie **Odrzuć wniosek** trafia zarówno do wiadomości dla wnioskodawcy, jak i do wiadomości dla tego Dyrektora.
+
+Jeżeli wniosek nie wymagał wstępnej akceptacji, powiadomienie otrzymuje tylko wnioskodawca. Po odrzuceniu wniosek otrzymuje status Odrzucony, a użytkownik nie uzyskuje dostępu.

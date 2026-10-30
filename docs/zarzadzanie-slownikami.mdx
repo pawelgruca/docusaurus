@@ -1,0 +1,118 @@
+---
+title: "24. Zarządzanie słownikami"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** dostęp do Kalendarza świąt
+-   **Operator Systemu:** brak dostępu
+-   **Gospodarz:** dostęp do Kalendarza świąt i słowników biznesowych aplikacji (atrybuty i typy jednostek, typy produktów i dokumentów, kategorie zapotrzebowań)
+-   **Opiekun Jednostki:** brak dostępu
+-   **Reporter:** brak dostępu
+
+Funkcjonalność umożliwia przeglądanie i zarządzanie słownikami systemowymi, które zawierają zdefiniowane wartości wykorzystywane w różnych miejscach aplikacji e-Sklep.
+
+## 24.1. Dostęp do słowników systemowych \{#sekcja-24-1-dostep-do-slownikow-systemowych}
+
+<Access roles="Administrator Systemu, Gospodarz — zgodnie z uprawnieniem do danego słownika" />
+
+Aby uzyskać dostęp do słowników systemowych:
+
+W menu głównym (po lewej stronie ekranu) wybierz opcję **Ustawienia**. System wyświetli listę dostępnych słowników.
+
+## 24.2. Zarządzanie słownikami \{#sekcja-24-2-zarzadzanie-slownikami}
+
+<Access roles="Administrator Systemu, Gospodarz — zgodnie z uprawnieniem do danego słownika" />
+
+Niezależnie od rodzaju słownika, proces zarządzania przebiega według jednego ogólnego schematu.
+
+### Przeglądanie słownika \{#przegladanie-slownika}
+
+1.  W menu **Ustawienia** wybierz odpowiedni kafelek słownika.
+2.  System wyświetli listę wszystkich zdefiniowanych wartości danego słownika.
+3.  Na liście widoczne są podstawowe informacje związane z danym słownikiem.
+
+![Zrzut ekranu](/img/podrecznik/img-185.png)
+
+### Dodawanie nowej pozycji do słownika \{#dodawanie-nowej-pozycji-do-slownika}
+
+![Zrzut ekranu](/img/podrecznik/img-186.png)
+
+1.  Na ekranie listy pozycji słownika kliknij przycisk **Dodaj** znajdujący się w prawym górnym rogu ekranu.
+2.  System wyświetli formularz dodawania nowej pozycji.
+3.  Wypełnij wymagane pola (specyficzne dla danego słownika).
+4.  Po uzupełnieniu wszystkich wymaganych informacji, kliknij przycisk **Zapisz**, aby dodać nową pozycję do słownika.
+
+### Edycja pozycji słownika \{#edycja-pozycji-slownika}
+
+![Zrzut ekranu](/img/podrecznik/img-187.png)
+
+1.  Na liście pozycji słownika znajdź tę, którą chcesz edytować.
+2.  Kliknij ikonę ⋮ w wierszu tabeli, a następnie wybierz opcję **Edytuj**.
+3.  System wyświetli formularz z aktualnymi danymi pozycji słownika.
+4.  Wprowadź niezbędne zmiany w polach formularza.
+5.  Kliknij przycisk **Zapisz**, aby zatwierdzić modyfikacje.
+
+### Usuwanie pozycji słownika \{#usuwanie-pozycji-slownika}
+
+![Zrzut ekranu](/img/podrecznik/img-188.png)
+
+1.  Na liście pozycji słownika znajdź tę, którą chcesz usunąć.
+2.  Kliknij ikonę ⋮ w wierszu tabeli, a następnie wybierz opcję **Usuń**.
+3.  System wyświetli okno dialogowe z prośbą o potwierdzenie operacji.
+4.  Kliknij **Potwierdź**, aby usunąć wybraną pozycję.
+
+## 24.3. Opisy poszczególnych słowników \{#sekcja-24-3-opisy-poszczegolnych-slownikow}
+
+Każdy ze słowników, choć zarządzany według podobnego schematu, ma swoje specyficzne cechy i zastosowania:
+
+### Typy jednostek \{#typy-jednostek}
+
+Słownik ten zawiera różne rodzaje jednostek organizacyjnych funkcjonujących w systemie (np. centrala, oddział, filia, punkt sprzedaży).
+
+**Zastosowanie:** Typy jednostek są wykorzystywane podczas tworzenia i zarządzania jednostkami organizacyjnymi (Rozdział 7).
+
+### Typy produktów \{#typy-produktow}
+
+Słownik zawiera definicje różnych rodzajów produktów i usług dostępnych w systemie (np. artykuły biurowe, sprzęt komputerowy, usługi).
+
+**Zastosowanie:** Typy produktów są wykorzystywane podczas tworzenia i zarządzania produktami (Rozdział 9).
+
+### Atrybuty jednostek \{#atrybuty-jednostek}
+
+Słownik zawiera definicje dodatkowych cech, które mogą być przypisane do jednostek organizacyjnych (np. wielkość, region, kategoria).
+
+**Zastosowanie:** Atrybuty jednostek są wykorzystywane do rozszerzenia informacji o jednostkach organizacyjnych (Rozdział 7.4).
+
+### Kategorie zapotrzebowania \{#kategorie-zapotrzebowania}
+
+Słownik zawiera definicje różnych typów zapotrzebowań, które mogą być składane w systemie (np. standardowe, pilne, awaryjne).
+
+**Zastosowanie:** Kategorie zapotrzebowania są wykorzystywane podczas składania i zarządzania zapotrzebowaniami (Rozdział 4).
+
+### Kalendarz świąt \{#kalendarz-swiat}
+
+Słownik zawiera definicje dni wolnych od pracy, które są uwzględniane przy obliczaniu terminów realizacji zamówień i dostaw.
+
+#### Import świąt \{#import-swiat}
+
+![Zrzut ekranu](/img/podrecznik/img-189.png)
+
+1.  Na ekranie kalendarza świąt kliknij przycisk **Importuj święta** znajdujący się w prawym górnym rogu ekranu.
+2.  System wyświetli okno Import świąt z polem Rok.
+3.  W polu Rok wpisz czterocyfrowy rok, dla którego chcesz zaimportować święta, np. 2027.
+4.  Kliknij przycisk **Importuj święta**, aby automatycznie dodać wszystkie święta dla wybranego roku.
+
+### Typy dokumentów \{#typy-dokumentow}
+
+Słownik zawiera typy dokumentów, np. **Umowa**, **Instrukcja** i **Inne**.
+
+**Zastosowanie:** Typy są wykorzystywane przy dodawaniu dokumentów w module **Definicje dokumentów** oraz filtrowaniu list dokumentów (zob. rozdział 15).
+
+Aby otworzyć słownik, wybierz **Ustawienia**, a następnie **Typy dokumentów**. Dodawanie, edycję i usuwanie opisano w podrozdziale 24.2.
+
+**Ważne:** Pole **Nazwa** jest wymagane. **Nazwa** musi być inna niż nazwy istniejących aktywnych typów. Przy edycji zmień pole **Nazwa** i zapisz zmiany.
+
+Typu **Umowa** nie można usunąć. Usunięcie pozostałych typów wymaga potwierdzenia.
+
+![Słownik typów dokumentów.](/img/podrecznik/img-190.png)

@@ -1,0 +1,197 @@
+---
+title: "21. Zarządzanie użytkownikami"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** pełny dostęp
+-   **Operator Systemu:** brak dostępu
+-   **Gospodarz:** brak dostępu
+-   **Opiekun Jednostki:** brak dostępu
+-   **Reporter:** brak dostępu
+
+Funkcjonalność umożliwia użytkownikom z odpowiednimi uprawnieniami przeglądanie listy użytkowników, dodawanie nowych użytkowników, filtrowanie listy oraz zarządzanie kontami operatorów dostawców.
+
+## 21.1. Filtrowanie listy użytkowników \{#sekcja-21-1-filtrowanie-listy-uzytkownikow}
+
+<Access roles="Administrator Systemu" />
+
+![Lista użytkowników z filtrem oczekujących zgłoszeń odebrania dostępu i liczbą zgłoszeń.](/img/podrecznik/img-159.png)
+
+Włącz filtr **Ma oczekujące zgłoszenia odebrania dostępu**, aby wyświetlić użytkowników, dla których Dyrektorzy zgłosili potrzebę odebrania dostępu do jednostki. Wyłączenie filtra przywraca listę zgodną z pozostałymi ustawieniami filtrowania.
+
+## 21.2. Przeglądanie listy użytkowników \{#sekcja-21-2-przegladanie-listy-uzytkownikow}
+
+<Access roles="Administrator Systemu" />
+
+![Zrzut ekranu](/img/podrecznik/img-160.png)
+
+W menu głównym (po lewej stronie ekranu) wybierz opcję **Użytkownicy**. System wyświetli tabelę z listą wszystkich użytkowników systemu.
+
+Kolumna **Zgłoszenia odebrania dostępu** pokazuje liczbę oczekujących zgłoszeń dotyczących danego użytkownika. Przeglądanie zgłoszeń — zob. podrozdział 21.8.
+
+## 21.3. Dodawanie nowego użytkownika \{#sekcja-21-3-dodawanie-nowego-uzytkownika}
+
+<Access roles="Administrator Systemu" />
+
+1.  Na liście **Użytkownicy** kliknij **Dodaj użytkownika**.
+2.  Uzupełnij wymagane pola: **Imię**, **Nazwisko**, **Nazwa użytkownika** i **E-mail**. Podaj adres skrzynki, z której będzie korzystać ta osoba.
+3.  Jeżeli dostęp ma być ograniczony w czasie, ustaw **Datę ważności konta**. Pozostawienie pola pustego oznacza brak terminu ważności.
+
+![Zrzut ekranu](/img/podrecznik/img-161.png)
+
+1.  Kliknij **Zapisz**. Aplikacja utworzy konto i otworzy jego szczegóły.
+
+Na podany adres e-mail zostaną wysłane dane do pierwszego logowania. Podczas pierwszego logowania użytkownik ustawi własne hasło zgodnie z podrozdziałem 2.1.
+
+1.  Przejdź do zakładki **Role** i przypisz uprawnienia potrzebne tej osobie. Dla roli jednostkowej wskaż właściwą jednostkę. Procedurę opisano w podrozdziale 21.7.
+
+## 21.4. Dodawanie operatora dostawcy \{#sekcja-21-4-dodawanie-operatora-dostawcy}
+
+<Access roles="Administrator Systemu" />
+
+Operator dostawcy pracuje w aplikacji w imieniu wybranej firmy. Utworzenie takiego konta wymaga dostępu do listy użytkowników i uprawnienia **Dodawanie** w funkcji **Zarządzanie użytkownikami dostawcy**.
+
+1.  Na liście **Użytkownicy** kliknij **Dodaj operatora dostawcy**.
+2.  Uzupełnij **Imię**, **Nazwisko**, **Nazwę użytkownika** i **E-mail**.
+3.  W polu **Dostawca** wybierz firmę, którą użytkownik będzie reprezentował.
+
+![Zrzut ekranu](/img/podrecznik/img-162.png)
+
+1.  Kliknij **Zapisz**.
+
+Dane do pierwszego logowania zostaną wysłane na adres e-mail konta. Po utworzeniu sprawdź przypisanie roli dostawcy i firmy w zakładce **Role**. Jeśli dostęp ma obowiązywać do określonego terminu, ustaw datę ważności w szczegółach konta (zob. podrozdział 21.5).
+
+## 21.5. Wyświetlanie i edycja danych użytkownika \{#sekcja-21-5-wyswietlanie-i-edycja-danych-uzytkownika}
+
+<Access roles="Administrator Systemu" />
+
+1.  Na liście **Użytkownicy** kliknij wiersz wybranej osoby albo wybierz **Edytuj** z menu jej wiersza.
+2.  W zakładce **Szczegóły** popraw dane, na przykład nazwisko lub adres e-mail.
+3.  Aby ustalić termin dostępu, uzupełnij **Datę ważności konta**. Aby pozostawić konto bez terminu, wyczyść datę przyciskiem usuwania wartości.
+4.  Aby wyłączyć konto, usuń zaznaczenie **Aktywny**. Aby ponownie je włączyć, zaznacz to pole.
+
+![Zrzut ekranu](/img/podrecznik/img-163.png)
+
+1.  Kliknij **Zapisz**, aby zastosować zmiany. **Anuluj** przywraca wcześniejsze wartości.
+
+**Ważne:** wyłączenie konta dotyczy dostępu użytkownika do aplikacji. Jeśli osoba ma przestać pracować tylko dla jednej jednostki, usuń odpowiednie przypisania ról zgodnie z podrozdziałem 21.7 albo rozpatrz zgłoszenie odebrania dostępu.
+
+Przy ponownym włączaniu konta sprawdź także datę ważności i przypisane role. Jeśli rola wymaga kodu e-mail, upewnij się, że użytkownik ma dostęp do skrzynki zapisanej na koncie. Diagnozowanie problemów z dostępem opisano w podrozdziale 20.6.
+
+Jeżeli użytkownik ma oczekujące zgłoszenia odebrania dostępu, w jego szczegółach pojawia się komunikat z ich liczbą. Kliknij **Przejdź do zgłoszeń**, aby otworzyć zakładkę **Zgłoszenia odebrania dostępu** (zob. podrozdział 21.8).
+
+## 21.6. Eksportowanie listy użytkowników \{#sekcja-21-6-eksportowanie-listy-uzytkownikow}
+
+<Access roles="Administrator Systemu" />
+
+![Zrzut ekranu](/img/podrecznik/img-164.png)
+
+System e-Sklep umożliwia eksport listy użytkowników do arkusza kalkulacyjnego, co jest przydatne do dalszej analizy danych lub raportowania.
+
+1.  W menu bocznym wybierz opcję **Użytkownicy**, aby wyświetlić listę wszystkich dostępnych użytkowników.
+2.  (Opcjonalnie) Zastosuj odpowiednie filtry, aby zawęzić listę do interesujących Cię użytkowników.
+3.  W prawym górnym rogu ekranu znajdziesz ikonę pobierania.
+4.  Kliknij ikonę pobierania, aby wyeksportować listę użytkowników do pliku Excel.
+5.  System wygeneruje plik, który zostanie automatycznie pobrany przez Twoją przeglądarkę.
+
+**Ważne:** Jeśli przed eksportem zastosujesz filtry na liście użytkowników, te same filtry zostaną uwzględnione podczas generowania pliku Excel. Oznacza to, że plik będzie zawierał dokładnie tych samych użytkowników, których aktualnie widzisz na ekranie.
+
+## 21.7. Przypisywanie i usuwanie ról \{#sekcja-21-7-przypisywanie-i-usuwanie-rol}
+
+<Access roles="Administrator Systemu" />
+
+Definicja roli określa dostępne funkcje i operacje. Przypisanie łączy tę rolę z konkretną osobą i — zależnie od zakresu — jednostką lub dostawcą. Role przygotowuje się na ekranie **Role** (rozdział 22), a osobom nadaje w zakładce **Role** wybranego użytkownika.
+
+Jedno konto może mieć kilka ról z tego samego zakresu: **Administracja**, **Sklep** albo **Dostawca**. Próba połączenia na jednym koncie ról z różnych zakresów jest odrzucana.
+
+-   **Administracja** — przypisanie dotyczy pracy w panelu administracyjnym. Nie wskazuje się jednostki ani dostawcy.
+-   **Sklep** — przy roli jednostkowej wybiera się jednostkę. Osobne przypisania pozwalają tej samej osobie pracować dla kilku jednostek.
+-   **Dostawca** — przy przypisaniu wskazuje się firmę, w której imieniu osoba będzie pracować.
+
+Przed dodaniem roli sprawdź istniejące przypisania i kolumnę **Jednostka/Dostawca**. Nie dodawaj ponownie tego samego przypisania.
+
+### Nadanie roli użytkownikowi \{#nadanie-roli-uzytkownikowi}
+
+1.  Na liście **Użytkownicy** otwórz konto i przejdź do zakładki **Role**.
+
+![Zrzut ekranu](/img/podrecznik/img-165.png)
+
+1.  Kliknij **Dodaj rolę** i wybierz pozycję w polu **Rola**.
+2.  Dla roli jednostkowej wybierz **Jednostkę**, a dla roli dostawcy — **Dostawcę**. Dla roli administracyjnej przejdź do zapisu.
+
+![Zrzut ekranu](/img/podrecznik/img-166.png)
+
+1.  Kliknij **Zapisz**. Na liście sprawdź nazwę roli i wskazaną jednostkę lub dostawcę.
+
+### Jednostki obsługiwane przez Opiekuna Jednostki \{#jednostki-obslugiwane-przez-opiekuna-jednostki}
+
+1.  W zakładce **Role** użytkownika kliknij **Dodaj rolę** i wybierz **Opiekun jednostki**.
+2.  W polu **Jednostki** zaznacz placówki obsługiwane przez tę osobę. Przy zmianie istniejących przypisań pozostaw zaznaczone jednostki, dla których nadal ma pracować, zaznacz dodatkowe, a odznacz te, które ma przestać obsługiwać.
+
+![Zrzut ekranu](/img/podrecznik/img-167.png)
+
+1.  Kliknij **Zapisz** i sprawdź przypisania na liście.
+
+**Ważne:** wybór jednostek Opiekuna określa docelowy zestaw obsługiwanych placówek. Przed zapisem sprawdź cały zestaw, nie tylko nowo dodawaną jednostkę.
+
+### Odebranie przypisanej roli \{#odebranie-przypisanej-roli}
+
+1.  W zakładce **Role** odszukaj właściwy wiersz. Przy roli jednostkowej porównaj również nazwę w kolumnie **Jednostka/Dostawca**.
+2.  Otwórz menu wiersza i wybierz **Usuń**.
+
+![Zrzut ekranu](/img/podrecznik/img-168.png)
+
+1.  W oknie potwierdzenia wybierz **Usuń**, aby odebrać przypisanie, albo **Anuluj**, aby je pozostawić.
+
+Po usunięciu użytkownik traci uprawnienia wynikające z tego przypisania. Dalszy dostęp zależy od ról pozostających na koncie. Samo usunięcie przypisania nie usuwa definicji roli.
+
+Powyższa procedura służy do ręcznego nadawania i odbierania ról. Zgłoszenia odebrania dostępu przesłane przez Dyrektora rozpatruje się w zakładce **Zgłoszenia odebrania dostępu** — zob. podrozdziały 21.8–21.10.
+
+## 21.8. Przeglądanie zgłoszeń odebrania dostępu \{#sekcja-21-8-przegladanie-zgloszen-odebrania-dostepu}
+
+<Access roles="Administrator Systemu" />
+
+Dyrektor Jednostki może zgłosić potrzebę odebrania użytkownikowi dostępu do swojej jednostki. Samo wysłanie zgłoszenia pozostawia dotychczasowy dostęp do czasu decyzji Administratora Systemu. Aby przejrzeć zgłoszenie:
+
+1.  W menu bocznym wybierz **Użytkownicy**. W razie potrzeby włącz filtr **Ma oczekujące zgłoszenia odebrania dostępu** i odszukaj użytkownika.
+2.  Otwórz szczegóły użytkownika, a następnie zakładkę **Zgłoszenia odebrania dostępu**. Możesz również skorzystać z odsyłacza **Przejdź do zgłoszeń** w komunikacie w szczegółach użytkownika.
+3.  Sprawdź jednostkę, osobę zgłaszającą, datę utworzenia i uzasadnienie. Jeśli długa treść jest zwinięta, kliknij **Pokaż więcej**, aby przeczytać ją w całości.
+
+![Oczekujące zgłoszenie odebrania dostępu do Bursy Gdańskiej.](/img/podrecznik/img-169.png)
+
+Zakładka zawiera wyłącznie oczekujące zgłoszenia. Po akceptacji lub odrzuceniu zgłoszenie znika z tej listy. Nie jest to historia rozpatrzonych zgłoszeń.
+
+## 21.9. Akceptacja zgłoszenia odebrania dostępu \{#sekcja-21-9-akceptacja-zgloszenia-odebrania-dostepu}
+
+<Access roles="Administrator Systemu" />
+
+Aby zaakceptować oczekujące zgłoszenie:
+
+1.  W zakładce **Zgłoszenia odebrania dostępu** sprawdź, którego użytkownika i której jednostki dotyczy zgłoszenie. Zapoznaj się z uzasadnieniem Dyrektora.
+2.  Kliknij **Akceptuj** przy właściwym zgłoszeniu.
+3.  W oknie **Akceptuj zgłoszenie** możesz wpisać opcjonalny **Komentarz**.
+4.  Kliknij **Akceptuj**, aby potwierdzić decyzję. Przycisk **Anuluj** zamyka okno bez rozpatrzenia zgłoszenia.
+
+![Okno akceptacji zgłoszenia z opcjonalnym komentarzem.](/img/podrecznik/img-170.png)
+
+Akceptacja usuwa wszystkie role użytkownika przypisane do jednostki wskazanej w zgłoszeniu. Użytkownik znika z listy użytkowników tej jednostki. System usuwa również wskazania tego użytkownika jako zastępcy w tej jednostce.
+
+Pozostałe role użytkownika pozostają bez zmian. Konto zostaje dezaktywowane dopiero wtedy, gdy użytkownik nie ma już żadnych ról w systemie.
+
+Zgłoszenie znika z listy oczekujących. Dyrektor, który je wysłał, otrzymuje wiadomość e-mail z wynikiem oraz komentarzem, jeśli został podany.
+
+## 21.10. Odrzucanie zgłoszenia odebrania dostępu \{#sekcja-21-10-odrzucanie-zgloszenia-odebrania-dostepu}
+
+<Access roles="Administrator Systemu" />
+
+Aby odrzucić oczekujące zgłoszenie:
+
+1.  W zakładce **Zgłoszenia odebrania dostępu** odszukaj właściwe zgłoszenie i sprawdź jego uzasadnienie oraz jednostkę.
+2.  Kliknij **Odrzuć** przy wybranym zgłoszeniu.
+3.  W oknie **Odrzuć zgłoszenie** wpisz **Uzasadnienie odrzucenia**. Pole jest wymagane.
+4.  Kliknij **Odrzuć**, aby potwierdzić decyzję. Przycisk **Anuluj** zamyka okno bez rozpatrzenia zgłoszenia.
+
+![Okno odrzucenia zgłoszenia z wymaganym uzasadnieniem.](/img/podrecznik/img-171.png)
+
+Odrzucenie pozostawia dotychczasowe role i dostęp użytkownika bez zmian. Zgłoszenie znika z listy oczekujących, a w części jednostki znika oznaczenie **Oczekuje na rozpatrzenie**. Dyrektor, który wysłał zgłoszenie, otrzymuje wiadomość e-mail z wynikiem i uzasadnieniem odrzucenia.

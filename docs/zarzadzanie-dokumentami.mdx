@@ -1,0 +1,98 @@
+---
+title: "15. Zarządzanie dokumentami"
+---
+
+**Dostęp do modułu:**
+
+-   **Gospodarz:** pełny dostęp
+-   **Księgowość:** przeglądanie i pobieranie udostępnionych dokumentów
+-   **Reporter:** przeglądanie i pobieranie udostępnionych dokumentów
+
+Moduł **Definicje dokumentów** umożliwia Gospodarzowi udostępnianie instrukcji i innych plików wybranym odbiorcom. Dla każdego dokumentu określa się typ, role użytkowników oraz — w przypadku ról jednostki — zakres jednostek. Odbiorcy przeglądają i pobierają dostępne pliki w module **Dokumenty**.
+
+Lista **Dokumenty** w szczegółach jednostki, opisana w podrozdziale 7**.11**, służy do przeglądania dokumentów przypisanych do tej jednostki. Dodawanie i udostępnianie instrukcji odbywa się przez **Definicje dokumentów**.
+
+## 15.1. Przeglądanie definicji dokumentów \{#sekcja-15-1-przegladanie-definicji-dokumentow}
+
+<Access roles="Gospodarz" />
+
+1.  W menu głównym po lewej stronie ekranu wybierz **Definicje dokumentów**.
+2.  System wyświetli listę definicji. W tabeli sprawdzisz nazwę, typ dokumentu, typ pliku, role odbiorców, zakres jednostek oraz wskazane jednostki.
+3.  Aby odszukać dokument, wpisz początek jego nazwy w polu **Nazwa**. Możesz również użyć filtrów **Typ dokumentu** i **Jednostki**.
+4.  Kliknij nagłówek kolumny, aby zmienić sposób sortowania. W razie potrzeby przejdź do kolejnej strony listy.
+5.  Kliknij wiersz dokumentu, aby otworzyć jego dane. Ikona pobierania po prawej stronie wiersza umożliwia pobranie pliku.
+
+![Zrzut ekranu](/img/podrecznik/img-108.png)
+
+## 15.2. Dodawanie i udostępnianie dokumentu \{#sekcja-15-2-dodawanie-i-udostepnianie-dokumentu}
+
+<Access roles="Gospodarz" />
+
+Przed dodaniem dokumentu sprawdź, czy właściwy typ jest dostępny w słowniku **Typy dokumentów** (zob. podrozdział **24.3.6**).
+
+1.  Na liście **Definicje dokumentów** kliknij **Dodaj definicję**.
+2.  Uzupełnij wymagane pole **Nazwa** i wybierz **Typ dokumentu**, np. **Instrukcja**, **Umowa** albo **Inne**. Typ dokumentu określa jego przeznaczenie; typ pliku oznacza format załącznika.
+3.  W polu Załącznik wybierz plik z dysku. Formularz umożliwia wybór plików PDF, DOCX i XLSX o wielkości do 20 MB. Po wybraniu większego pliku wyświetla komunikat o przekroczeniu limitu; wybierz mniejszy załącznik.
+4.  W razie potrzeby uzupełnij **Uwagi**.
+5.  W polu **Role** zaznacz co najmniej jedną rolę odbiorców. Możesz wskazać m.in. **Operator jednostki**, **Dyrektor jednostki**, **Księgowość** lub **Reporter**. Rola księgowa występuje na liście pod nazwą **Księgowość**.
+6.  Jeżeli wybrano rolę Operatora lub Dyrektora jednostki, określ **Zakres jednostek**. Wybierz **Wszystkie jednostki**, aby dokument był dostępny użytkownikom wybranych ról we wszystkich jednostkach.
+
+![Zrzut ekranu](/img/podrecznik/img-109.png)
+
+Po przekroczeniu dopuszczalnej wielkości załącznika formularz wyświetla komunikat:
+
+![Zrzut ekranu](/img/podrecznik/img-110.png)
+
+1.  Aby ograniczyć dostęp do konkretnych jednostek, zaznacz **Wybrane jednostki**, a następnie w polu **Jednostki** wskaż co najmniej jedną jednostkę. Można wybrać jedną lub kilka jednostek.
+
+![Formularz udostępniania dokumentu wybranym jednostkom.](/img/podrecznik/img-111.png)
+
+Jeżeli dokument przeznaczony jest wyłącznie dla ról panelu, np. **Księgowość** i **Reporter**, zakres jednostek nie jest wymagany. Użytkownicy tych ról odczytują dokumenty przez pozycję **Dokumenty** w bocznym menu.
+
+1.  Po sprawdzeniu danych kliknij **Zapisz**.
+
+Dokument staje się dostępny dla wskazanych odbiorców. Przycisk **Anuluj** resetuje formularz bez zapisania wprowadzonych zmian.
+
+**Ważne:** Wybór wszystkich jednostek nie oznacza udostępnienia dokumentu wszystkim rolom. W części jednostki użytkownik musi mieć wskazaną rolę z dostępem do dokumentów, a wybrana przez niego jednostka musi należeć do ustalonego zakresu.
+
+## 15.3. Edytowanie dokumentu \{#sekcja-15-3-edytowanie-dokumentu}
+
+<Access roles="Gospodarz" />
+
+1.  Na liście **Definicje dokumentów** kliknij dokument, który chcesz zmienić.
+2.  Popraw nazwę, typ dokumentu lub uwagi. W razie potrzeby zmień role odbiorców oraz zakres jednostek.
+3.  Jeżeli chcesz zastąpić dotychczasowy plik, wybierz go w polu **Nowy załącznik**. Pozostawienie tego pola pustego zachowuje obecny plik.
+4.  Sprawdź dane i kliknij **Zapisz**. System potwierdzi zapis komunikatem **Zapisano zmiany**.
+
+![Zrzut ekranu](/img/podrecznik/img-112.png)
+
+Zmiana odbiorców wpływa na to, kto widzi dokument na liście **Dokumenty**. Po podmianie załącznika odbiorcy pobierają nowy plik. Przycisk **Anuluj** przywraca zapisane wartości formularza.
+
+## 15.4. Usuwanie dokumentu \{#sekcja-15-4-usuwanie-dokumentu}
+
+<Access roles="Gospodarz" />
+
+1.  Otwórz definicję dokumentu przeznaczonego do usunięcia.
+2.  Kliknij ikonę kosza **Usuń** w górnej części formularza.
+3.  System wyświetli okno potwierdzenia. Kliknij **Usuń**, aby wycofać dokument, albo **Anuluj**, aby pozostawić go bez zmian.
+
+![Okno potwierdzenia usunięcia definicji dokumentu.](/img/podrecznik/img-113.png)
+
+Po usunięciu system wyświetla komunikat **Definicja dokumentu została usunięta**. Dokument przestaje być dostępny na listach definicji i dokumentów odbiorców. Usunięcie z systemu nie usuwa kopii wcześniej pobranych na komputer użytkownika.
+
+## 15.5. Przeglądanie i pobieranie udostępnionych dokumentów \{#sekcja-15-5-przegladanie-i-pobieranie-udostepnionych-dokumentow}
+
+<Access roles="Gospodarz, Księgowość, Reporter" />
+
+Użytkownicy panelu korzystają z pozycji **Dokumenty** w bocznym menu. Lista zawiera dokumenty udostępnione ich rolom.
+
+![Pozycja Dokumenty w menu użytkownika z rolą Księgowość.](/img/podrecznik/img-114.png)
+
+Jeżeli nie udostępniono dokumentów Twojej roli albo żaden dokument nie spełnia ustawionych filtrów, tabela wyświetla komunikat **Nic nie znaleziono**. Sprawdź filtry, a w razie potrzeby poproś Gospodarza o sprawdzenie odbiorców dokumentu.
+
+1.  W bocznym menu wybierz **Dokumenty**.
+2.  Odszukaj plik po nazwie lub wybierz wartość filtra **Typ dokumentu**. Lista zostanie ograniczona do dokumentów spełniających wskazane kryteria.
+3.  Sprawdź nazwę, typ dokumentu, format pliku i ewentualne uwagi.
+4.  Kliknij ikonę pobierania po prawej stronie wiersza wybranego dokumentu. Zależnie od ustawień przeglądarki plik zostanie pobrany lub otwarty do podglądu.
+
+![Lista dokumentów dostępnych dla zalogowanego użytkownika panelu.](/img/podrecznik/img-115.png)

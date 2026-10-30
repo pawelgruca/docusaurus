@@ -1,0 +1,12 @@
+{
+  "theme.SearchBar.label": { "message": "Szukaj" },
+  "theme.SearchBar.noResultsText": { "message": "Brak wyników" },
+  "theme.SearchBar.seeAll": { "message": "Zobacz wszystkie wyniki" },
+  "theme.SearchBar.seeAllOutsideContext": { "message": "Zobacz wszystkie wyniki poza „{context}”" },
+  "theme.SearchBar.searchInContext": { "message": "Zobacz wszystkie wyniki w „{context}”" },
+  "theme.SearchPage.existingResultsTitle": { "message": "Wyniki wyszukiwania dla „{query}”" },
+  "theme.SearchPage.emptyResultsTitle": { "message": "Przeszukaj podręcznik" },
+  "theme.SearchPage.searchContext.everywhere": { "message": "Wszędzie" },
+  "theme.SearchPage.documentsFound.plurals": { "message": "Znaleziono 1 dokument|Znaleziono {count} dokumenty|Znaleziono {count} dokumentów|Znaleziono {count} dokumentu" },
+  "theme.SearchPage.noResultsText": { "message": "Nie znaleziono dokumentów" }
+}

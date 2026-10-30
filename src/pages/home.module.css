@@ -1,0 +1,50 @@
+.home {
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.hero {
+  margin-bottom: 3rem;
+}
+
+.version {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.chapters {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.chapter {
+  display: block;
+  height: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--ifm-font-color-base);
+}
+
+.chapter:hover {
+  text-decoration: none;
+  background: var(--ifm-color-emphasis-100);
+}

@@ -1,0 +1,131 @@
+---
+title: "22. Zarządzanie rolami"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** pełny dostęp
+-   **Operator Systemu: brak dostępu**
+-   **Gospodarz:** brak dostępu
+-   **Opiekun Jednostki:** brak dostępu
+-   **Reporter:** brak dostępu
+
+Funkcjonalność umożliwia przeglądanie, tworzenie, modyfikowanie i zarządzanie rolami systemowymi, które określają zakres uprawnień użytkowników w systemie e-Sklep.
+
+## 22.1. Przeglądanie listy ról \{#sekcja-22-1-przegladanie-listy-rol}
+
+<Access roles="Administrator Systemu" />
+
+W menu głównym (po lewej stronie ekranu) wybierz opcję **Role**. System wyświetli ekran z listą wszystkich dostępnych ról systemowych.
+
+![Zrzut ekranu](/img/podrecznik/img-172.png)
+
+## 22.2. Filtrowanie listy ról \{#sekcja-22-2-filtrowanie-listy-rol}
+
+<Access roles="Administrator Systemu" />
+
+![Zrzut ekranu](/img/podrecznik/img-173.png)
+
+1.  Skorzystaj z panelu filtrów znajdującego się powyżej listy ról.
+2.  Wprowadź odpowiednie kryteria filtrowania.
+3.  Po ustawieniu filtrów lista ról automatycznie się odświeży.
+
+## 22.3. Dodawanie nowej roli \{#sekcja-22-3-dodawanie-nowej-roli}
+
+<Access roles="Administrator Systemu" />
+
+1.  Na liście **Role** kliknij **Dodaj rolę**.
+2.  Wpisz wymaganą **Nazwę** i opcjonalny **Opis**, wyjaśniający przeznaczenie roli.
+3.  Wybierz **Zakres**: Administracja, Sklep albo Dostawca. Zakres określa obszar pracy użytkowników tej roli.
+4.  Wybierz **Drugi składnik logowania**: Brak albo Kod wysyłany na e-mail. Zasady potwierdzania kodem opisano w podrozdziale 22.7.
+5.  W sekcji **Typ operacji** zaznacz potrzebne czynności. W sekcji **Moduły** wybierz moduły, w których rola będzie używana.
+
+![Zrzut ekranu](/img/podrecznik/img-174.png)
+
+1.  W sekcji **Uprawnienia** zaznacz funkcje odpowiadające zadaniom użytkowników. Zmiana zakresu lub modułów wpływa na dostępny zestaw funkcji; przed zapisem ponownie sprawdź zaznaczenia.
+
+Uprawnienia są pogrupowane według obszaru funkcji, np. **Użytkownicy i role**, **Jednostki i rejony** oraz **Budżet**. W odpowiednich grupach zaznaczaj potrzebne funkcje.
+
+![Zrzut ekranu](/img/podrecznik/img-175.png)
+
+1.  Kliknij **Zapisz**, a następnie przypisz rolę osobom zgodnie z podrozdziałem 21.7.
+
+**Ważne:** połączenie funkcji z typem operacji określa dozwolone działania. Przykładowo Odczyt umożliwia przeglądanie, a Edycja — zmianę danych w dostępnej funkcji. Nadaj tylko prawa potrzebne do wykonywania zadań.
+
+## 22.4. Edycja roli \{#sekcja-22-4-edycja-roli}
+
+<Access roles="Administrator Systemu" />
+
+Zmiana definicji roli dotyczy wszystkich osób, którym ją przypisano. Przed zapisem sprawdź, czy każda z tych osób powinna otrzymać zmieniony zestaw uprawnień.
+
+1.  Na liście **Role** otwórz rolę albo wybierz **Edytuj** z menu jej wiersza.
+2.  W zakładce **Szczegóły** zmień nazwę, opis, typy operacji, moduły lub uprawnienia.
+
+![Zrzut ekranu](/img/podrecznik/img-176.png)
+
+1.  Po zmianie modułów ponownie sprawdź funkcje zaznaczone w sekcji **Uprawnienia**.
+2.  Kliknij **Zapisz**, aby zastosować zmiany. **Anuluj** przywraca wartości sprzed edycji.
+
+Zakres wybiera się przy tworzeniu roli. Jeśli potrzebujesz roli dla innego obszaru pracy, utwórz nową rolę z właściwym zakresem.
+
+### Rola Administrator Systemu \{#rola-administrator-systemu}
+
+Definicja roli **Administrator Systemu** jest ustalona przez system. W zakładce Szczegóły nie można zmienić jej nazwy, opisu, typów operacji, modułów ani uprawnień.
+
+![Zrzut ekranu](/img/podrecznik/img-177.png)
+
+Sposób potwierdzania logowania tej roli ustawia się osobno w zakładce **Bezpieczeństwo logowania**. Możesz wybrać Brak albo Kod wysyłany na e-mail i zapisać zmianę zgodnie z podrozdziałem 22.7.
+
+## 22.5. Kopiowanie roli jako szablon \{#sekcja-22-5-kopiowanie-roli-jako-szablon}
+
+<Access roles="Administrator Systemu" />
+
+Funkcjonalność umożliwia tworzenie nowych ról na podstawie istniejących, co jest przydatne przy definiowaniu podobnych zestawów uprawnień:
+
+1.  Na liście ról znajdź tę, którą chcesz użyć jako szablon.
+2.  Kliknij ikonę ⋮ w wierszu tabeli, a następnie wybierz opcję **Kopiuj jako szablon**.
+3.  System wyświetli formularz tworzenia nowej roli z już wypełnionymi polami, skopiowanymi z wybranego szablonu.
+4.  Wprowadź unikalną nazwę dla nowej roli i dostosuj pozostałe ustawienia według potrzeb.
+5.  Po wprowadzeniu zmian kliknij przycisk **Zapisz**, aby utworzyć nową rolę na podstawie szablonu.
+
+**Wskazówka:** Kopiowanie ról jest szczególnie przydatne, gdy chcesz utworzyć nową rolę, która różni się tylko niewielką liczbą uprawnień od już istniejącej.
+
+![Zrzut ekranu](/img/podrecznik/img-178.png)
+
+## 22.6. Eksportowanie listy ról \{#sekcja-22-6-eksportowanie-listy-rol}
+
+<Access roles="Administrator Systemu" />
+
+![Zrzut ekranu](/img/podrecznik/img-179.png)
+
+System e-Sklep umożliwia eksport listy ról do arkusza kalkulacyjnego, co jest przydatne do dokumentacji i analizy:
+
+1.  W menu bocznym wybierz opcję **Role**, aby wyświetlić listę wszystkich dostępnych ról.
+2.  (Opcjonalnie:) Zastosuj odpowiednie filtry, aby zawęzić listę do interesujących Cię ról.
+3.  W prawym górnym rogu ekranu znajdziesz ikonę pobierania.
+4.  Kliknij ikonę pobierania, aby wyeksportować listę ról do pliku Excel.
+5.  System wygeneruje plik, który zostanie automatycznie pobrany przez Twoją przeglądarkę.
+
+**Ważne:** Jeśli przed eksportem zastosujesz filtry na liście ról, te same filtry zostaną uwzględnione podczas generowania pliku Excel. Oznacza to, że plik będzie zawierał dokładnie te same role, które aktualnie widzisz na ekranie.
+
+:::warning
+
+**Uwaga dla Administratora Systemu:** Zarządzanie rolami jest krytycznym elementem bezpieczeństwa systemu. Nieodpowiednie przydzielenie uprawnień może prowadzić do nieautoryzowanego dostępu do danych lub funkcji. Zawsze dokładnie analizuj wpływ zmian w uprawnieniach na bezpieczeństwo systemu.
+
+:::
+
+## 22.7. Drugi składnik logowania \{#sekcja-22-7-drugi-skladnik-logowania}
+
+<Access roles="Administrator Systemu" />
+
+Drugi składnik logowania to dodatkowe potwierdzenie tożsamości kodem przesyłanym na e-mail. Ustawienie dotyczy wszystkich osób, którym przypisano daną rolę.
+
+1.  Przed włączeniem kodu upewnij się, że użytkownicy roli mają dostęp do skrzynek zapisanych w danych ich kont. Adres poprawisz w zakładce **Szczegóły** użytkownika.
+2.  Otwórz listę **Role**, wybierz rolę i przejdź do zakładki **Bezpieczeństwo logowania**.
+3.  W polu **Drugi składnik logowania** wybierz **Kod wysyłany na e-mail**, aby wymagać potwierdzenia kodem, albo **Brak**, aby ta rola nie nakładała takiego wymogu.
+
+![Zrzut ekranu](/img/podrecznik/img-180.png)
+
+1.  Kliknij **Zapisz**. Sprawdź nowe logowanie użytkownika zgodnie z podrozdziałem 2.1.
+
+**Ważne:** kod jest wymagany, gdy włączono go w przynajmniej jednej roli użytkownika. Ustawienie Brak w innej roli nie znosi tego wymogu. Sposób potwierdzania logowania można zmieniać również dla **Administratora Systemu**, mimo że definicja jego uprawnień pozostaje nieedytowalna.

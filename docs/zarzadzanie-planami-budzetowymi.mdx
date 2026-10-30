@@ -1,0 +1,79 @@
+---
+title: "10. Zarządzanie planami budżetowymi"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** pełny dostęp
+-   **Operator Systemu:** brak dostępu
+-   **Gospodarz:** pełny dostęp
+-   **Opiekun Jednostki:** brak dostępu
+-   **Reporter:** brak dostępu
+
+Plany budżetowe stanowią kluczowy element systemu e-Sklep, umożliwiający kontrolę wydatków jednostek organizacyjnych. Użytkownicy z odpowiednimi uprawnieniami mają możliwość przeglądania, edytowania i usuwania planów budżetowych, które zostały stworzone przez podległe jednostki na podstawie formularzy budżetowych.
+
+## 10.1. Przeglądanie planów budżetowych \{#sekcja-10-1-przegladanie-planow-budzetowych}
+
+<Access roles="Gospodarz" />
+
+Aby uzyskać dostęp do listy wszystkich planów budżetowych w systemie, w menu głównym (po lewej stronie ekranu) wybierz opcję **Plany budżetowe**. System wyświetli ekran z listą dostępnych planów budżetowych
+
+Kolumna **Rodzaj** rozróżnia **Plan budżetowy** i **Uzupełnienie planu**. Uzupełnienie dotyczy nowych produktów dodawanych do aktywnego planu jednostki.
+
+![Zrzut ekranu](/img/podrecznik/img-062.png)
+
+## 10.2. Filtrowanie planów budżetowych \{#sekcja-10-2-filtrowanie-planow-budzetowych}
+
+<Access roles="Gospodarz" />
+
+Aby szybko znaleźć konkretne plany budżetowe, użyj panelu filtrów znajdującego się powyżej listy planów. Po ustawieniu filtrów lista planów budżetowych automatycznie się odświeży.
+
+W filtrze **Typ** wybierz **Plan budżetowy** lub **Uzupełnienie planu**, aby ograniczyć listę do wybranego rodzaju.
+
+![Zrzut ekranu](/img/podrecznik/img-063.png)
+
+## 10.3. Szczegóły planu budżetowego \{#sekcja-10-3-szczegoly-planu-budzetowego}
+
+<Access roles="Gospodarz" />
+
+Aby zobaczyć szczegółowe informacje dotyczące konkretnego planu budżetowego:
+
+1.  Otwórz szczegóły planu budżetowego, klikając wiersz wybranego planu albo wybierając opcję **Edytuj** z menu trzech kropek (⋮) na końcu tego wiersza.
+2.  System wyświetli ekran ze szczegółami planu budżetowego
+3.  Widok szczegółów zawiera podstawowe informacje (nazwa, jednostka, okres obowiązywania, status, data utworzenia i osoba tworząca plan) oraz lista produktów, którą możesz filtrować i eksportować do pliku Excel.
+
+Po zatwierdzeniu uzupełnienia przez Gospodarza nowe produkty zostają dodane do aktywnego planu jednostki. Uzupełnienie otrzymuje status **Uwzględniony w planie**.
+
+Zatwierdzony zwykły plan oczekuje na datę rozpoczęcia obowiązywania; gdy ta nastąpi – zastępuje dotychczasowy plan.
+
+![Zrzut ekranu](/img/podrecznik/img-064.png)
+
+## 10.4. Usuwanie planów budżetowych \{#sekcja-10-4-usuwanie-planow-budzetowych}
+
+<Access roles="Gospodarz" />
+
+Usuwanie planu budżetowego jest możliwe tylko dla planów o określonych statusach:
+
+1.  Z widoku tabeli wybierz konkretny plan budżetowy, klikając na odpowiedni wiersz lub korzystając z opcji ikony trzech kropek (⋮) wybierając opcję **Usuń**.
+2.  System wyświetli okno dialogowe z prośbą o potwierdzenie operacji.
+3.  Kliknij **Potwierdź**, aby zatwierdzić usunięcie planu.
+
+![Zrzut ekranu](/img/podrecznik/img-065.png)
+
+**Ważne:** Usunięcie planu budżetowego jest możliwe tylko dla planów o statusie **Roboczy**, **Wysłany** lub **Zatwierdzony**. Planów o statusie **Aktywny** lub **Wygasły** nie można usunąć ze względu na zachowanie integralności danych historycznych.
+
+## 10.5. Eksportowanie planów budżetowych \{#sekcja-10-5-eksportowanie-planow-budzetowych}
+
+<Access roles="Gospodarz" />
+
+System e-Sklep umożliwia eksport listy planów budżetowych do arkusza kalkulacyjnego, co jest przydatne do dalszej analizy danych lub raportowania:
+
+1.  W menu bocznym wybierz opcję **Plany budżetowe**, aby wyświetlić listę wszystkich dostępnych planów.
+2.  (Opcjonalnie) Zastosuj odpowiednie filtry, aby zawęzić listę do interesujących Cię planów.
+3.  W prawym górnym rogu ekranu znajdziesz ikonę pobierania
+4.  Kliknij ikonę pobierania, aby wyeksportować listę planów budżetowych do pliku Excel.
+5.  System wygeneruje plik, który zostanie automatycznie pobrany przez Twoją przeglądarkę.
+
+![Zrzut ekranu](/img/podrecznik/img-066.png)
+
+**Ważne:** Jeśli przed eksportem zastosujesz filtry na liście planów, te same filtry zostaną uwzględnione podczas generowania pliku Excel. Oznacza to, że plik będzie zawierał dokładnie te same plany budżetowe, które aktualnie widzisz na ekranie.

@@ -1,0 +1,65 @@
+---
+title: "19. Generowanie raportów"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** pełny dostęp
+-   **Operator Systemu:** pełny dostęp
+-   **Gospodarz:** pełny dostęp
+-   **Opiekun Jednostki:** Wyniki raportów są ograniczone do jednej jednostki, na którą opiekun jednostki jest aktualnie zalogowany.
+-   **Reporter:** pełny dostęp
+
+Raporty wyświetlają dane tylko z aktualnie wybranej jednostki. Jeśli opiekun ma przypisanych kilka jednostek, może przełączać się między nimi w górnym menu nawigacyjnym - raporty będą wówczas aktualizowane dla wybranej jednostki.
+
+Raporty stanowią kluczowy element systemu e-Sklep, dostarczając zagregowanych danych analitycznych na temat działalności jednostek, zamówień, produktów i dostawców. Funkcjonalność raportowania umożliwia przeglądanie, generowanie oraz eksportowanie różnorodnych zestawień w określonych przedziałach czasowych, co wspiera proces podejmowania decyzji i planowania strategicznego.
+
+## 19.1. Przeglądanie dostępnych raportów \{#sekcja-19-1-przegladanie-dostepnych-raportow}
+
+<Access roles="Administrator Systemu, Operator Systemu, Gospodarz, Opiekun Jednostki, Reporter" />
+
+![Zrzut ekranu](/img/podrecznik/img-153.png)
+
+W menu głównym (po lewej stronie ekranu) wybierz opcję **Raporty**. System wyświetli ekran z listą wszystkich dostępnych raportów.
+
+Raporty są pogrupowane według tematu, np. **Zamówienia**, **Dostawy** oraz **Plany i budżet**.
+
+Rozwiń grupę związaną z zadaniem albo wpisz nazwę lub temat w polu **Szukaj po nazwie lub opisie raportu**.
+
+Przyciski **Rozwiń wszystkie** i **Zwiń wszystkie** ułatwiają przeglądanie grup.
+
+## 19.2. Generowanie raportu \{#sekcja-19-2-generowanie-raportu}
+
+<Access roles="Administrator Systemu, Operator Systemu, Gospodarz, Opiekun Jednostki, Reporter" />
+
+![Zrzut ekranu](/img/podrecznik/img-154.png)
+
+Aby wygenerować wybrany raport:
+
+1.  Otwórz wybrany typ raportu.
+2.  System wyświetli ekran z parametrami raportu
+3.  Po ustawieniu wszystkich parametrów kliknij przycisk **Generuj raport**.
+4.  System przetworzy dane zgodnie z wybranymi filtrami i wyświetli wyniki raportu w formie tabeli
+
+:::warning
+
+**Uwaga:** Dostępne parametry filtrowania raportów różnią się w zależności od przydzielonej roli w systemie. Każda rola ma dostęp do innego zestawu filtrów, odpowiadającego jej zakresowi uprawnień.
+
+:::
+
+## 19.3. Eksportowanie raportu \{#sekcja-19-3-eksportowanie-raportu}
+
+<Access roles="Administrator Systemu, Operator Systemu, Gospodarz, Opiekun Jednostki, Reporter" />
+
+![Zrzut ekranu](/img/podrecznik/img-155.png)
+
+Po pomyślnym wygenerowaniu raportu, system oferuje możliwość eksportu danych w różnych formatach:
+
+Dostępne przyciski zależą od wybranego raportu. Przykładowy raport GCUW **Lista jednostek z liczbą i wartością zamówień** pokazano na ilustracji.
+
+1.  W prawym górnym rogu wyświetlanej tabeli z wynikami, znajdziesz przyciski eksportu.
+2.  Kliknij odpowiedni przycisk, aby wyeksportować raport do wybranego formatu:
+    1.  Ikona **PDF** - zapisuje raport w formacie PDF;
+    2.  Ikona **Excel** - zapisuje raport w formacie arkusza kalkulacyjnego Excel, co umożliwia dalszą analizę danych;
+    3.  Ikona **CSV** \- zapisuje raport w formacie tekstowym CSV (w podstawowym formacie: dane są oddzielone przecinkami).
+3.  System wygeneruje plik w wybranym formacie i udostępni go do pobrania.

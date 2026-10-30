@@ -1,0 +1,105 @@
+---
+title: "18. Zarządzanie rejonami"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** brak dostępu
+-   **Operator Systemu:** brak dostępu
+-   **Gospodarz:** pełny dostęp
+-   **Opiekun Jednostki:** brak dostępu
+-   **Reporter:** brak dostępu
+
+Rejony w systemie e-Sklep to obszary organizacyjne, które pozwalają na grupowanie jednostek według kryteriów geograficznych lub funkcjonalnych. Użytkownicy z odpowiednimi uprawnieniami mają możliwość przeglądania i zarządzania rejonami, co umożliwia lepszą organizację dostępności kategorii produktów i umów dla różnych grup jednostek.
+
+## 18.1. Przeglądanie rejonów \{#sekcja-18-1-przegladanie-rejonow}
+
+<Access roles="Gospodarz" />
+
+Aby uzyskać dostęp do listy wszystkich rejonów w systemie:
+
+W menu głównym (po lewej stronie ekranu) wybierz opcję **Rejony**. System wyświetli ekran z listą wszystkich dostępnych rejonów.
+
+![Zrzut ekranu](/img/podrecznik/img-146.png)
+
+## 18.2. Dodawanie nowego rejonu \{#sekcja-18-2-dodawanie-nowego-rejonu}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-147.png)
+
+Aby utworzyć nowy rejon w systemie:
+
+1.  W menu głównym wybierz opcję **Rejony**.
+2.  Kliknij przycisk **Dodaj rejon** znajdujący się w prawym górnym rogu ekranu.
+3.  System wyświetli formularz dodawania nowego rejonu.
+4.  Wprowadź nazwę rejonu, która będzie jednoznacznie identyfikować dany rejon w systemie.
+5.  Kliknij przycisk **Zapisz**, aby utworzyć rejon.
+
+## 18.3. Edytowanie i szczegóły rejonu \{#sekcja-18-3-edytowanie-i-szczegoly-rejonu}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-148.png)
+
+Aby zmodyfikować lub wyświetlić szczegóły istniejącego rejonu:
+
+1.  Z widoku tabeli wybierz konkretny rejon, klikając na odpowiedni wiersz lub korzystając z opcji ikony trzech kropek (⋮) wybierając opcję **Edytuj**.
+2.  System wyświetli formularz z aktualnymi danymi rejonu.
+3.  Wprowadź wymagane zmiany.
+4.  Po wprowadzeniu zmian kliknij przycisk **Zapisz**, aby zatwierdzić modyfikacje.
+
+## 18.4. Zarządzanie kategoriami rejonu \{#sekcja-18-4-zarzadzanie-kategoriami-rejonu}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-149.png)
+
+Funkcjonalność umożliwia określenie, które kategorie produktów będą dostępne dla jednostek przypisanych do danego rejonu:
+
+1.  W widoku szczegółów rejonu przejdź do sekcji **Kategorie**.
+2.  System wyświetli drzewko dostępnych kategorii w formie hierarchicznej struktury.
+3.  Zaznacz lub odznacz odpowiednie kategorie, które mają być przypisane do rejonu
+4.  Po dokonaniu wyboru kliknij przycisk **Zapisz zmiany**, aby zatwierdzić przypisanie kategorii do rejonu.
+
+**Wskazówka:** Przypisanie kategorii do rejonu oznacza, że produkty z tych kategorii będą dostępne dla wszystkich jednostek przypisanych do tego rejonu. Warto więc dokładnie przemyśleć, które kategorie powinny być dostępne dla danego rejonu.
+
+## 18.5. Zarządzanie umowami rejonu \{#sekcja-18-5-zarzadzanie-umowami-rejonu}
+
+<Access roles="Gospodarz" />
+
+Dla wybranej kategorii w rejonie można przypisać wiele umów. Przełącznik **Wszystkie umowy** służy do rozszerzenia listy widocznych pozycji.
+
+1.  Na liście **Rejony** otwórz rejon i przejdź do zakładki **Zarządzanie umowami**.
+2.  Wybierz kategorię w drzewie kategorii. Przy wyłączonym przełączniku **Wszystkie umowy** widoczne są obecnie przypisane umowy.
+
+![Zrzut ekranu](/img/podrecznik/img-150.png)
+
+1.  Włącz **Wszystkie umowy**, aby zobaczyć pozostałe umowy dostępne na liście. Samo przełączenie widoku nie zmienia przypisania.
+
+![Zrzut ekranu](/img/podrecznik/img-151.png)
+
+1.  W kolumnie **Przypisana** zaznacz wszystkie umowy, które chcesz przypisać do wybranej kategorii (możesz zaznaczyć kilka pozycji równocześnie).
+2.  Kliknij **Zapisz**, aby utrwalić wybór. Kliknij **Anuluj**, aby wycofać niezapisane zmiany.
+
+Po zapisaniu wyłącz **Wszystkie umowy** i sprawdź, czy lista zawiera wybrane przypisane umowy. Możesz też ponownie otworzyć kategorię, aby skontrolować zapisane przypisania.
+
+Przypisanie kilku umów umożliwia jednostkom zakupy z tych umów w danej kategorii. Produkty trafiają do osobnych koszyków według umowy, a koszyki są pogrupowane według dostawcy. Każdemu koszykowi odpowiada osobne zamówienie. Szczegółową obsługę zakupów opisuje podręcznik użytkownika jednostki organizacyjnej.
+
+**Ważne:** przełącznik nie przypisuje wszystkich wyświetlonych umów. Dostęp do Rejonów wynika z uprawnień roli; samo posiadanie roli Administrator Systemu nie oznacza dostępu do tego modułu.
+
+## 18.6. Eksportowanie listy rejonów \{#sekcja-18-6-eksportowanie-listy-rejonow}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-152.png)
+
+System e-Sklep umożliwia eksport listy rejonów do arkusza kalkulacyjnego, co jest przydatne do dalszej analizy danych lub raportowania:
+
+1.  W menu bocznym wybierz opcję **Rejony**, aby wyświetlić listę wszystkich dostępnych rejonów.
+2.  (Opcjonalnie) Zastosuj odpowiednie filtry, aby zawęzić listę do interesujących Cię rejonów.
+3.  W prawym górnym rogu ekranu znajdziesz ikonę pobierania:
+4.  Kliknij ikonę pobierania, aby wyeksportować listę rejonów do pliku Excel.
+5.  System wygeneruje plik, który zostanie automatycznie pobrany przez Twoją przeglądarkę.
+
+**Ważne:** Jeśli przed eksportem zastosujesz filtry na liście rejonów, te same filtry zostaną uwzględnione podczas generowania pliku Excel. Oznacza to, że plik będzie zawierał dokładnie te same rejony, które aktualnie widzisz na ekranie.

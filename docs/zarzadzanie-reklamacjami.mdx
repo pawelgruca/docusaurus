@@ -1,0 +1,123 @@
+---
+title: "6. Zarządzanie reklamacjami"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** pełny dostęp
+-   **Operator Systemu:** brak dostępu
+-   **Gospodarz:** pełny dostęp (edycja, filtrowanie, przeglądanie, zatwierdzanie, odrzucanie, korekty protokołu)
+-   **Opiekun Jednostki:** brak dostępu
+-   **Reporter:** brak dostępu
+
+W systemie e-Sklep, użytkownicy z odpowiednimi uprawnieniami są odpowiedzialni za obsługę reklamacji związanych z niezgodnościami w zamówieniach. Dzięki tej funkcjonalności można analizować zgłoszone problemy, zarządzać reklamacjami oraz wykonywać korekty protokołów odbioru.
+
+## 6.1. Przeglądanie listy reklamacji \{#sekcja-6-1-przegladanie-listy-reklamacji}
+
+<Access roles="Gospodarz" />
+
+Aby uzyskać dostęp do wszystkich reklamacji w systemie w menu głównym (po lewej stronie ekranu) wybierz opcję **Reklamacje**. System wyświetli ekran z listą wszystkich reklamacji, do których masz dostęp
+
+![Zrzut ekranu](/img/podrecznik/img-023.png)
+
+## 6.2. Filtrowanie reklamacji \{#sekcja-6-2-filtrowanie-reklamacji}
+
+<Access roles="Gospodarz" />
+
+Aby szybko znaleźć konkretne reklamacje, użyj panelu filtrów znajdującego się powyżej listy reklamacji. Po ustawieniu filtrów lista reklamacji automatycznie się odświeży.
+
+![Zrzut ekranu](/img/podrecznik/img-024.png)
+
+## 6.3. Przeglądanie szczegółów reklamacji \{#sekcja-6-3-przegladanie-szczegolow-reklamacji}
+
+<Access roles="Gospodarz" />
+
+Aby zobaczyć szczegółowe informacje dotyczące konkretnej reklamacji klikinij wiersz wybranej reklamacji albo wybierz opcję **Edytuj** z menu trzech kropek (⋮) na końcu tego wiersza. System wyświetli ekran ze szczegółami reklamacji.
+
+![Szczegóły reklamacji oczekującej na rozpatrzenie — dostępne działania Gospodarza.](/img/podrecznik/img-025.png)
+
+**Wskazówka:** Dokładnie przeanalizuj załączone zdjęcia - często zawierają one kluczowe informacje dotyczące przyczyny reklamacji, takie jak uszkodzenia produktów czy niezgodności w dostawie.
+
+Akceptację i odrzucenie reklamacji opisano w podrozdziałach 6.4–6.5.
+
+## 6.4. Akceptacja reklamacji \{#sekcja-6-4-akceptacja-reklamacji}
+
+<Access roles="Gospodarz" />
+
+Gospodarz może zaakceptować reklamację o statusie **W trakcie rozpatrywania**. Przy akceptacji podaje uzasadnienie oraz decyduje, czy system ma automatycznie skorygować protokół odbioru.
+
+1.  W menu **Reklamacje** otwórz szczegóły zgłoszenia, które chcesz rozpatrzyć.
+2.  Zapoznaj się z powodem reklamacji, reklamowanymi produktami i załącznikami. Kliknij **Akceptuj reklamację**.
+3.  W oknie **Akceptuj reklamację** wpisz powód uznania zgłoszenia w wymaganym polu **Uzasadnienie**.
+4.  Jeżeli rozstrzygnięcie wymaga automatycznej korekty protokołu odbioru, zaznacz **Automatyczna korekta protokołu odbioru**. Pole jest domyślnie niezaznaczone.
+5.  Sprawdź dane i kliknij **Akceptuj reklamację**, aby zapisać decyzję. Przycisk **Anuluj** zamyka okno bez rozstrzygnięcia reklamacji.
+
+![Akceptacja reklamacji — wymagane uzasadnienie i opcjonalna automatyczna korekta protokołu.](/img/podrecznik/img-026.png)
+
+Po akceptacji system wyświetla komunikat **Reklamacja została zaakceptowana**. Reklamacja otrzymuje status **Uznana**, a zamówienie — **Reklamacja zakończona**. Jeżeli zaznaczono opcję automatycznej korekty, system koryguje powiązany protokół odbioru.
+
+System wysyła do uprawnionych odbiorców wiadomość e-mail o uznaniu reklamacji, zawierającą uzasadnienie decyzji. Wykonanie korekty protokołu odbioru jest również objęte powiadomieniem e-mail.
+
+Aby sprawdzić rozstrzygnięcie, otwórz powiązane zamówienie i przejdź do **Historii zamówienia**. Rozwiń zdarzenie **Uznano reklamację**, aby odczytać uzasadnienie, datę oraz zmianę statusu. Jeżeli wykonano automatyczną korektę, w historii pojawia się również zdarzenie **Automatycznie skorygowano protokół odbioru po reklamacji**.
+
+![Historia zamówienia — rozstrzygnięcie reklamacji i korekta protokołu odbioru.](/img/podrecznik/img-027.png)
+
+## 6.5. Odrzucanie reklamacji \{#sekcja-6-5-odrzucanie-reklamacji}
+
+<Access roles="Gospodarz" />
+
+Gospodarz może odrzucić reklamację o statusie **W trakcie rozpatrywania**. Podanie powodu odrzucenia jest wymagane.
+
+1.  Otwórz szczegóły reklamacji z listy **Reklamacje** i zapoznaj się ze zgłoszeniem.
+2.  Kliknij **Odrzuć reklamację** w górnej części ekranu.
+3.  W oknie **Odrzuć reklamację** uzupełnij wymagane pole **Powód odrzucenia**.
+4.  Kliknij **Odrzuć reklamację**, aby zapisać decyzję. Przycisk **Anuluj** zamyka okno bez rozstrzygnięcia reklamacji.
+
+![Odrzucenie reklamacji — wymagany powód odrzucenia.](/img/podrecznik/img-028.png)
+
+Po odrzuceniu system wyświetla komunikat **Reklamacja została odrzucona**. Reklamacja otrzymuje status **Odrzucona**, a zamówienie — **Reklamacja zakończona**. Samo odrzucenie nie wykonuje automatycznej korekty protokołu odbioru.
+
+System wysyła do uprawnionych odbiorców wiadomość e-mail o odrzuceniu reklamacji, zawierającą powód odrzucenia. Powód decyzji można sprawdzić w **Historii zamówienia**, po rozwinięciu zdarzenia **Odrzucono reklamację**.
+
+**Ważne:** Status zamówienia **Reklamacja zakończona** informuje o zakończeniu rozpatrywania zgłoszenia. Nie oznacza sam w sobie, że reklamacja została uznana. Wynik wskazuje status reklamacji oraz zdarzenie w historii zamówienia.
+
+![Historia zamówienia — odrzucona reklamacja i powód decyzji.](/img/podrecznik/img-029.png)
+
+## 6.6. Procedura wykonywania korekty protokołu \{#sekcja-6-6-procedura-wykonywania-korekty-protokolu}
+
+<Access roles="Gospodarz" />
+
+Gospodarz może ręcznie poprawić protokół odbioru z poziomu reklamacji.
+
+1.  W szczegółach reklamacji kliknij **Korekta protokołu** w górnej części ekranu.
+2.  Na ekranie protokołu popraw ilości w kolumnie **Dostarczono**, zgodnie ze stanem faktycznym.
+3.  W wymaganym polu **Uwagi** wpisz uzasadnienie wprowadzanych zmian.
+4.  Sprawdź poprawność danych i kliknij **Zapisz**. System potwierdzi zapis komunikatem **Pomyślnie zapisano zmiany**.
+
+![Ręczna korekta protokołu odbioru — kolumna Dostarczono, pole Uwagi i przycisk Zapisz.](/img/podrecznik/img-030.png)
+
+Wykonanie korekty jest rejestrowane w **Historii zamówienia** i objęte powiadomieniem e-mail o skorygowaniu protokołu odbioru.
+
+## 6.7. Tworzenie reklamacji \{#sekcja-6-7-tworzenie-reklamacji}
+
+<Access roles="Dyrektor Jednostki, Operator Jednostki" />
+
+:::warning
+
+**Uwaga:** Funkcja tworzenia reklamacji jest dostępna wyłącznie dla Dyrektorów Jednostki oraz Operatorów jednostki i tylko po wygenerowaniu i zatwierdzeniu protokołu odbioru dla zamówienia.
+
+:::
+
+1.  Przejdź do szczegółów zamówienia, dla którego chcesz złożyć reklamację.
+2.  Upewnij się, że dla zamówienia został wygenerowany i zatwierdzony protokół odbioru.
+3.  Po zatwierdzeniu protokołu odbioru, w prawym górnym rogu ekranu pojawi się przycisk **Złóż reklamację**.
+4.  Kliknij przycisk **Złóż reklamację**.
+5.  Wypełnij formularz reklamacji
+6.  Po wypełnieniu formularza kliknij przycisk **Wyślij reklamację**.
+7.  Reklamacja zostanie przekazana dalej do weryfikacji
+
+![Zrzut ekranu](/img/podrecznik/img-031.png)
+
+![Zrzut ekranu](/img/podrecznik/img-032.png)
+
+**Ważne:** Możliwość złożenia reklamacji pojawia się tylko dla zamówień z zatwierdzonym protokołem odbioru. Bez tego kroku przycisk **Złóż reklamację** nie będzie widoczny w interfejsie.

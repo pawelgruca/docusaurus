@@ -1,0 +1,108 @@
+{
+  "title": "Podręcznik Administratora Systemu",
+  "subtitle": "Platformy eSklep",
+  "version": "1.4.5",
+  "createdAt": "2025-03-15",
+  "chapters": [
+    {
+      "slug": "wprowadzenie",
+      "title": "1. Wprowadzenie"
+    },
+    {
+      "slug": "logowanie-i-dostep-do-systemu",
+      "title": "2. Logowanie i dostęp do systemu"
+    },
+    {
+      "slug": "nawigacja",
+      "title": "3. Nawigacja"
+    },
+    {
+      "slug": "zarzadzanie-zapotrzebowaniami-inwestycyjnymi",
+      "title": "4. Zarządzanie zapotrzebowaniami Inwestycyjnymi"
+    },
+    {
+      "slug": "zarzadzanie-zamowieniami",
+      "title": "5. Zarządzanie Zamówieniami"
+    },
+    {
+      "slug": "zarzadzanie-reklamacjami",
+      "title": "6. Zarządzanie reklamacjami"
+    },
+    {
+      "slug": "zarzadzanie-jednostkami-organizacyjnymi",
+      "title": "7. Zarządzanie jednostkami organizacyjnymi"
+    },
+    {
+      "slug": "zarzadzanie-kategoriami",
+      "title": "8. Zarządzanie kategoriami"
+    },
+    {
+      "slug": "zarzadzanie-produktami",
+      "title": "9. Zarządzanie produktami"
+    },
+    {
+      "slug": "zarzadzanie-planami-budzetowymi",
+      "title": "10. Zarządzanie planami budżetowymi"
+    },
+    {
+      "slug": "zarzadzanie-formularzami-budzetowymi",
+      "title": "11. Zarządzanie formularzami budżetowymi"
+    },
+    {
+      "slug": "zarzadzanie-korektami-planow-budzetowych",
+      "title": "12. Zarządzanie korektami planów budżetowych"
+    },
+    {
+      "slug": "zarzadzanie-dostawcami",
+      "title": "13. Zarządzanie dostawcami"
+    },
+    {
+      "slug": "zarzadzanie-umowami",
+      "title": "14. Zarządzanie umowami"
+    },
+    {
+      "slug": "zarzadzanie-dokumentami",
+      "title": "15. Zarządzanie dokumentami"
+    },
+    {
+      "slug": "zarzadzanie-powiadomieniami-i-banerami",
+      "title": "16. Zarządzanie powiadomieniami i banerami"
+    },
+    {
+      "slug": "zarzadzanie-karami",
+      "title": "17. Zarządzanie karami"
+    },
+    {
+      "slug": "zarzadzanie-rejonami",
+      "title": "18. Zarządzanie rejonami"
+    },
+    {
+      "slug": "generowanie-raportow",
+      "title": "19. Generowanie raportów"
+    },
+    {
+      "slug": "dziennik-aktywnosci-i-rejestr-logowan",
+      "title": "20. Dziennik aktywności i rejestr logowań"
+    },
+    {
+      "slug": "zarzadzanie-uzytkownikami",
+      "title": "21. Zarządzanie użytkownikami"
+    },
+    {
+      "slug": "zarzadzanie-rolami",
+      "title": "22. Zarządzanie rolami"
+    },
+    {
+      "slug": "zarzadzanie-rejestracjami",
+      "title": "23. Zarządzanie rejestracjami"
+    },
+    {
+      "slug": "zarzadzanie-slownikami",
+      "title": "24. Zarządzanie słownikami"
+    },
+    {
+      "slug": "dodatkowe-ustawienia-systemu",
+      "title": "25. Dodatkowe ustawienia systemu"
+    }
+  ]
+}

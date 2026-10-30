@@ -1,0 +1,158 @@
+---
+title: "5. Zarządzanie Zamówieniami"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** pełny dostęp
+-   **Operator Systemu:** brak dostępu
+-   **Gospodarz:** dostęp do przeglądania, filtrowania, eksportowania, zarządzania
+-   **Opiekun Jednostki:** dostęp do przeglądania, filtrowania, zarządzania
+-   **Reporter:** brak dostępu
+
+## 5.1. Przeglądanie i monitorowanie zamówień \{#sekcja-5-1-przegladanie-i-monitorowanie-zamowien}
+
+<Access roles="Gospodarz, Opiekun Jednostki" />
+
+Aby uzyskać dostęp do listy wszystkich zamówień:
+
+W menu głównym (po lewej stronie ekranu) wybierz opcję **Zamówienia**. System wyświetli ekran z listą wszystkich zamówień, do których masz dostęp.
+
+**Lista zamówień nie odświeża się automatycznie. Aby wyświetlić aktualny stan zamówień, kliknij Odśwież nad listą. System ponownie pobierze dane z zachowaniem ustawionych filtrów.**
+
+![Zrzut ekranu](/img/podrecznik/img-014.png)
+
+:::warning
+
+**Uwaga:** Jako Opiekun Jednostki widzisz tylko zamówienia związane z Twoją jednostką organizacyjną.
+
+:::
+
+## 5.2. Filtrowanie zamówień \{#sekcja-5-2-filtrowanie-zamowien}
+
+<Access roles="Gospodarz, Opiekun Jednostki" />
+
+System oferuje zaawansowane opcje filtrowania, które pomogą Ci szybko znaleźć konkretne zamówienia: użyj panelu filtrów znajdującego się powyżej listy zamówień. Po ustawieniu filtrów lista zamówień automatycznie się odświeży.
+
+Jeżeli chcesz ponownie pobrać dane dla ustawionych filtrów, użyj przycisku **Odśwież**.
+
+![Zrzut ekranu](/img/podrecznik/img-015.png)
+
+## 5.3. Szczegóły zamówienia \{#sekcja-5-3-szczegoly-zamowienia}
+
+<Access roles="Gospodarz, Opiekun Jednostki" />
+
+Aby zobaczyć szczegółowe informacje o konkretnym zamówieniu:
+
+Kliknij wiersz z wybranym zamówieniem na liście. System wyświetli ekran szczegółów zamówienia.
+
+![Zrzut ekranu](/img/podrecznik/img-016.png)
+
+W **Historii zamówienia** można sprawdzić wykonanie korekty protokołu odbioru. Rozwiń zdarzenie **Zaakceptowano korektę protokołu odbioru**, aby odczytać datę, poprzedni i następny status zamówienia oraz osobę wykonującą operację. Status przed korektą i po niej może być taki sam, jeżeli korekta nie zmienia stanu realizacji zamówienia.
+
+![Historia zamówienia z zaakceptowaną korektą protokołu odbioru.](/img/podrecznik/img-017.png)
+
+## 5.4. Eksportowanie listy zamówień \{#sekcja-5-4-eksportowanie-listy-zamowien}
+
+<Access roles="Gospodarz" />
+
+System e-Sklep umożliwia eksport listy zamówień do arkusza kalkulacyjnego, co jest przydatne do dalszej analizy danych lub raportowania:
+
+1.  W menu bocznym wybierz opcję **Zamówienia**, aby wyświetlić listę wszystkich dostępnych zamówień.
+2.  (Opcjonalnie) Zastosuj odpowiednie filtry, aby zawęzić listę do interesujących Cię zamówień.
+3.  W prawym górnym rogu ekranu znajdziesz ikonę pobierania
+4.  Kliknij ikonę pobierania, aby wyeksportować listę zamówień do pliku Excel.
+5.  System wygeneruje plik, który zostanie automatycznie pobrany przez Twoją przeglądarkę.
+
+![Zrzut ekranu](/img/podrecznik/img-018.png)
+
+**Ważne:** Jeśli przed eksportem zastosujesz filtry na liście zamówień, te same filtry zostaną uwzględnione podczas generowania pliku Excel. Oznacza to, że plik będzie zawierał dokładnie te same zamówienia, które aktualnie widzisz na ekranie.
+
+## 5.5. Monitorowanie statusów zamówień \{#sekcja-5-5-monitorowanie-statusow-zamowien}
+
+<Access roles="Gospodarz, Opiekun Jednostki" />
+
+Użytkownicy z odpowiednimi uprawnieniami mogą śledzić status każdego zamówienia w systemie:
+
+Status zamówienia jest widoczny na liście głównej oraz w szczegółach zamówienia. Typowa ścieżka statusów zamówienia:
+
+-   **Robocze** - zamówienie zostało utworzone, ale jeszcze nie zatwierdzone;
+-   **Gotowe** - zamówienie zostało zatwierdzone i jest gotowe do wysłania do dostawcy;
+-   **W realizacji** - dostawca potwierdził przyjęcie zamówienia i rozpoczął jego realizację;
+-   **Zrealizowane częściowo** - część zamówionych produktów została dostarczona;
+-   **Dostarczenie brakujących towarów** - trwa uzupełnianie brakujących elementów zamówienia
+-   **W reklamacji** - zgłoszono problemy z dostawą wymagające reklamacji;
+-   **Reklamacja zakończona** - Gospodarz rozstrzygnął reklamację, uznając ją albo odrzucając. Wynik decyzji i jej uzasadnienie można sprawdzić w historii zamówienia;
+-   **Zrealizowane w całości** - wszystkie zamówione produkty zostały dostarczone;
+-   Zakończone - proces zamówienia został całkowicie zakończony.
+
+**Wskazówka:** Często sprawdzaj status zamówień z bliskim terminem dostawy, aby upewnić się, że realizacja przebiega zgodnie z planem.
+
+:::warning
+
+**Uwaga dla Administratora Systemu:** Jako Administrator masz dostęp do wszystkich zamówień w systemie, niezależnie od jednostki organizacyjnej.
+
+:::
+
+**Wpływ korekty protokołu na status zamówienia**
+
+Po zaakceptowaniu korekty system przelicza dostarczone ilości. Zamówienie może otrzymać status **Zrealizowane w całości**, jeżeli nie pozostały ilości do dostarczenia, albo **Zrealizowane częściowo**, jeżeli nadal występują braki.
+
+Przykładowo zmniejszenie dostarczonej ilości może zmienić status z **Zrealizowane w całości** na **Zrealizowane częściowo**.
+
+Jeżeli zamówienie ma status **W reklamacji**, **Reklamacja zakończona** lub **Dostarczenie brakujących towarów**, akceptacja korekty zachowuje ten status. Korekta protokołu nie zastępuje rozstrzygnięcia reklamacji.
+
+## 5.6. Przeglądanie korekt i danych protokołu odbioru \{#sekcja-5-6-przegladanie-korekt-i-danych-protokolu-odbioru}
+
+<Access roles="Gospodarz" />
+
+Jednostka może zgłosić potrzebę poprawienia zatwierdzonego protokołu odbioru. Gospodarz otrzymuje zgłoszenie z uzasadnieniem i proponowanymi wartościami, a następnie może je zaakceptować lub odrzucić. O nowym zgłoszeniu system powiadamia Gospodarzy z uprawnieniem do powiadomień o zgłoszeniu korekty protokołu.
+
+1.  W menu głównym po lewej stronie ekranu wybierz **Korekty protokołów**.
+2.  Odszukaj zgłoszenie na liście. Możesz filtrować po **Numerze zamówienia**, **Jednostce** i **Statusie**.
+3.  W tabeli sprawdź numer zamówienia i protokołu odbioru, jednostkę, powód zgłoszenia oraz jego status. Dostępne statusy to **W trakcie rozpatrywania**, **Zaakceptowana** i **Odrzucona**.
+4.  Kliknij wiersz zgłoszenia, aby otworzyć szczegóły.
+
+![Lista korekt protokołów odbioru z filtrem numeru zamówienia.](/img/podrecznik/img-019.png)
+
+1.  W sekcji **Szczegóły** odczytaj **Powód korekty**, autora i datę zgłoszenia oraz datę dostawy zapisaną w protokole w chwili zgłoszenia i proponowaną datę dostawy. W sekcji **Produkty** sprawdź pozycje protokołu, ilości zamówione i propozycje ilości po korekcie. Jeżeli tekst uzasadnienia jest zwinięty, użyj **Pokaż więcej**.
+
+Numer zamówienia w szczegółach zgłoszenia prowadzi do zamówienia i jego historii. Po rozstrzygnięciu korekty można ponownie otworzyć zgłoszenie, sprawdzić status i odczytać zapisane uwagi albo powód odrzucenia.
+
+![Szczegóły zgłoszenia korekty, proponowane ilości i data dostawy.](/img/podrecznik/img-020.png)
+
+## 5.7. Akceptacja korekty protokołu odbioru \{#sekcja-5-7-akceptacja-korekty-protokolu-odbioru}
+
+<Access roles="Gospodarz" />
+
+Akceptacja jest dostępna dla zgłoszenia o statusie **W trakcie rozpatrywania**. Gospodarz może zaakceptować propozycję jednostki albo poprawić jej wartości przed zatwierdzeniem.
+
+1.  Otwórz zgłoszenie z listy **Korekty protokołów** i zapoznaj się z powodem korekty.
+2.  Sprawdź wartości w kolumnie **Dostarczona ilość po korekcie**. W razie potrzeby wpisz prawidłowe ilości. Ilość musi mieścić się w zakresie od zera do ilości zamówionej i mieć dokładność odpowiednią dla jednostki miary produktu.
+3.  Jeżeli przy pozycji dostępne jest pole **Substytut**, wskaż właściwy zamiennik. Korekta dotyczy pozycji istniejącego protokołu; dostępne zamienniki zależą od danego produktu.
+4.  Sprawdź pole **Data i czas dostawy**. Jeżeli wymaga poprawienia, ustaw właściwą datę i godzinę.
+5.  Kliknij **Akceptuj korektę**. W oknie potwierdzenia możesz uzupełnić opcjonalne **Uwagi**.
+6.  Kliknij **Akceptuj korektę** w oknie, aby zatwierdzić dane. Przycisk **Anuluj** zamyka okno bez podjęcia decyzji.
+
+![Potwierdzenie akceptacji korekty i opcjonalne uwagi.](/img/podrecznik/img-021.png)
+
+Po akceptacji zgłoszenie otrzymuje status **Zaakceptowana**, a zatwierdzone ilości, substytuty i data dostawy aktualizują protokół. System przelicza stan realizacji zamówienia i zapisuje w jego historii zdarzenie **Zaakceptowano korektę protokołu odbioru**. Zasady zmiany statusu — zob. podrozdział 5**.5**.
+
+Dyrektorzy i Operatorzy właściwej jednostki z uprawnieniem do powiadomień o rozstrzygnięciu korekty otrzymują e-mail z wynikiem decyzji i dodatkowymi informacjami, jeżeli je wpisano.
+
+**Ważne:** Korekta musi zawierać co najmniej jedną rzeczywistą zmianę danych protokołu. Jeżeli protokół zmienił się już po zgłoszeniu, system może zablokować akceptację komunikatem **Protokół zmienił się po zgłoszeniu korekty**.
+
+Zweryfikuj wtedy aktualne dane i uzgodnij prawidłową korektę z jednostką. Przycisk **Anuluj** na formularzu przywraca wartości zgłoszenia; nie odrzuca korekty.
+
+## 5.8. Odrzucanie korekty protokołu odbioru \{#sekcja-5-8-odrzucanie-korekty-protokolu-odbioru}
+
+<Access roles="Gospodarz" />
+
+1.  Otwórz zgłoszenie o statusie **W trakcie rozpatrywania**.
+2.  Kliknij **Odrzuć korektę**.
+3.  Uzupełnij wymagane pole **Powód odrzucenia**.
+4.  Kliknij **Odrzuć korektę**, aby zapisać decyzję, albo **Anuluj**, aby zamknąć okno bez rozstrzygnięcia zgłoszenia.
+
+![Odrzucenie korekty z wymaganym powodem.](/img/podrecznik/img-022.png)
+
+Zgłoszenie otrzymuje status **Odrzucona**. Protokół odbioru i status zamówienia pozostają bez zmian wynikających z tego zgłoszenia. Powód odrzucenia jest dostępny w szczegółach korekty oraz w powiadomieniu e-mail o rozstrzygnięciu przekazywanym uprawnionym Dyrektorom i Operatorom jednostki.

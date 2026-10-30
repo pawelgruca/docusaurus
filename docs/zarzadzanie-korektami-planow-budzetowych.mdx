@@ -1,0 +1,237 @@
+---
+title: "12. Zarządzanie korektami planów budżetowych"
+---
+
+Dostęp do modułu:
+
+**Gospodarz:** pełny dostęp do formularzy korekt i weryfikacji wniosków jednostek
+
+**Księgowość:** dostęp do obsługi korekt na etapie akceptacji księgowej
+
+Korekty planów budżetowych umożliwiają jednostkom organizacyjnym zgłoszenie zmian ilości produktów wynikających z aktywnych planów budżetowych. Po stronie administracyjnej proces obejmuje utworzenie formularza korekty, przyjęcie wniosków z jednostek, weryfikację gospodarza i księgowości oraz finalną decyzję gospodarza.
+
+Księgowość może zaakceptować korektę albo odrzucić ją z uzasadnieniem. Odrzucenie przez księgowość wymaga potwierdzenia gospodarza.
+
+## 12.1. Przeglądanie formularzy korekt \{#sekcja-12-1-przegladanie-formularzy-korekt}
+
+<Access roles="Gospodarz, Księgowość" />
+
+Aby uzyskać dostęp do listy formularzy korekt planów budżetowych:
+
+1.  W menu głównym po lewej stronie ekranu wybierz opcję Formularze korekt.
+2.  System wyświetli listę formularzy korekt dostępnych w ramach bieżącego podmiotu.
+3.  Na liście widoczne są: nazwa formularza, termin wypełnienia, użytkownik tworzący, status oraz data utworzenia.
+
+Formularz korekty może mieć status: Roboczy, Aktywny, Zarchiwizowany lub Usunięty.
+
+![Zrzut ekranu](/img/podrecznik/img-077.jpg)
+
+## 12.2. Filtrowanie formularzy korekt \{#sekcja-12-2-filtrowanie-formularzy-korekt}
+
+<Access roles="Gospodarz, Księgowość" />
+
+Aby szybko odnaleźć formularz korekty:
+
+1.  Skorzystaj z pola Nazwa, aby wyszukać formularz po nazwie.
+2.  Skorzystaj z filtra Status, aby ograniczyć listę do formularzy w wybranym statusie.
+3.  Po ustawieniu filtrów lista formularzy korekt automatycznie się odświeży.
+
+**Ważne:** Użytkownik z uprawnieniem księgowości widzi tylko zakres potrzebny do obsługi etapu księgowego. Gospodarz widzi pełny zestaw zakładek i akcji administracyjnych.
+
+## 12.3. Dodawanie nowego formularza korekty \{#sekcja-12-3-dodawanie-nowego-formularza-korekty}
+
+<Access roles="Gospodarz" />
+
+Tworzenie formularza korekty otwiera jednostkom możliwość zgłoszenia zmian do planów budżetowych:
+
+1.  W menu głównym wybierz opcję Formularze korekt.
+2.  Kliknij przycisk Dodaj formularz znajdujący się w prawym górnym rogu listy.
+3.  Wypełnij pole Nazwa.
+4.  Wskaż Termin wypełnienia formularza do.
+5.  Kliknij przycisk **Zapisz**, aby utworzyć formularz w statusie Roboczy.
+
+![Zrzut ekranu](/img/podrecznik/img-078.jpg)
+
+**Ważne:** Po zapisaniu formularza należy go aktywować. Dopiero formularz w statusie Aktywny jest widoczny dla jednostek organizacyjnych w części sklepowej systemu.
+
+## 12.4. Szczegóły i edycja formularza korekty \{#sekcja-12-4-szczegoly-i-edycja-formularza-korekty}
+
+<Access roles="Gospodarz" />
+
+Aby przejść do szczegółów formularza korekty:
+
+1.  Na liście formularzy korekt kliknij wiersz wybranego formularza.
+2.  System wyświetli szczegóły formularza wraz z zakładkami: Szczegóły, Korekty, Produkty, Kontrola - Umowy oraz Kontrola - Produkty.
+3.  W zakładce Szczegóły możesz zmienić nazwę formularza lub termin wypełnienia.
+4.  Po wprowadzeniu zmian kliknij **Zapisz**.
+
+Dla formularza w statusie Roboczy dostępna jest akcja **Aktywuj formularz**. Dla formularza Aktywnego dostępna jest akcja archiwizacji. Usunięcie formularza zmienia jego status na Usunięty.
+
+![Zrzut ekranu](/img/podrecznik/img-079.png)
+
+**Ważne:** W systemie może istnieć tylko jeden aktywny formularz korekty dla danego podmiotu. Próba aktywacji kolejnego formularza zostanie zablokowana.
+
+## 12.5. Przeglądanie korekt złożonych przez jednostki \{#sekcja-12-5-przegladanie-korekt-zlozonych-przez-jednostki}
+
+<Access roles="Gospodarz, Księgowość" />
+
+Zakładka Korekty prezentuje wnioski złożone przez jednostki organizacyjne w ramach wybranego formularza korekty.
+
+Na liście widoczne są między innymi: jednostka, skrót jednostki, status korekty, osoba tworząca, osoba zatwierdzająca, data zatwierdzenia, uzasadnienie zmiany, źródło finansowania oraz uwagi z poszczególnych etapów procesu.
+
+Korekty można filtrować po nazwie jednostki, skrócie jednostki oraz statusie.
+
+Zgłoszone korekty mogą przyjąć jeden z następujących statusów:
+
+-   Roboczy
+-   Oczekuje na akceptację dyrektora
+-   Oczekuje na weryfikację gospodarza
+-   Oczekuje na akceptację księgowości
+-   Oczekuje na finalną akceptację gospodarza
+-   Oczekuje na potwierdzenie odrzucenia przez gospodarza
+-   Zaakceptowany
+-   Odrzucony przez gospodarza
+-   Odrzucony finalnie
+-   Odrzucony na etapie decyzji końcowej
+
+![Zrzut ekranu](/img/podrecznik/img-080.jpg)
+
+Status **Oczekuje na potwierdzenie odrzucenia przez gospodarza** oznacza, że księgowość odrzuciła korektę, ale proces nie został jeszcze zakończony. Po potwierdzeniu przez gospodarza wiersz korekty otrzymuje status **Odrzucony finalnie**. Aby wyszukać takie zakończone korekty, w filtrze **Status** wybierz **Odrzucony przez księgowość**.
+
+## 12.6. Weryfikacja pojedynczej korekty przez gospodarza \{#sekcja-12-6-weryfikacja-pojedynczej-korekty-przez-gospodarza}
+
+<Access roles="Gospodarz" />
+
+Aby zweryfikować korektę złożoną przez jednostkę:
+
+1.  W zakładce Korekty kliknij wiersz wybranej korekty.
+2.  W zakładce Szczegóły sprawdź dane jednostki, status, uzasadnienie zmiany zapotrzebowania, źródło finansowania oraz podsumowanie wartościowe według kategorii.
+3.  Przejdź do zakładki Produkty, aby sprawdzić pozycje objęte korektą.
+4.  Zweryfikuj ilość z planu, pozostałą ilość, wnioskowaną zmianę ilości, docelową ilość i wartość korekty.
+
+![Zrzut ekranu](/img/podrecznik/img-081.jpg)
+
+Na etapie Oczekuje na weryfikację gospodarza system pozwala gospodarzowi zmienić zaakceptowaną ilość produktu. Wymagane jest wtedy podanie uzasadnienia korekty ilości.
+
+Po zakończeniu weryfikacji gospodarz może zaakceptować korektę i przekazać ją do księgowości albo odrzucić korektę z podaniem uwag.
+
+![Zrzut ekranu](/img/podrecznik/img-082.jpg)
+
+**Ważne:** System blokuje zmianę, jeżeli docelowa ilość po korekcie byłaby mniejsza od zera albo dostępna ilość produktu po korekcie spadłaby poniżej zera.
+
+## 12.7. Masowa obsługa korekt \{#sekcja-12-7-masowa-obsluga-korekt}
+
+<Access roles="Gospodarz" />
+
+W zakładce Korekty dostępne są akcje masowe usprawniające obsługę wielu wniosków jednocześnie:
+
+-   Przekaż wszystkie - akceptuje wszystkie dostępne korekty oczekujące na weryfikację gospodarza i przekazuje je do księgowości.
+-   Akceptuj wszystkie - finalnie akceptuje wszystkie korekty oczekujące na końcową decyzję gospodarza.
+-   W oknie dialogowym możesz wpisać wspólne uwagi, które zostaną przypisane do obsługiwanych korekt.
+
+![Zrzut ekranu](/img/podrecznik/img-083.jpg)
+
+**Ważne:** Akcje masowe obejmują tylko korekty znajdujące się w statusie właściwym dla danej operacji. Korekty w innych statusach nie są zmieniane.
+
+## 12.8. Obsługa etapu księgowości \{#sekcja-12-8-obsluga-etapu-ksiegowosci}
+
+<Access roles="Księgowość" />
+
+Po akceptacji przez Gospodarza korekta przechodzi do etapu księgowości i otrzymuje status *Oczekuje na akceptację księgowości*.
+
+### Akceptacja korekty \{#akceptacja-korekty}
+
+1.  Użytkownik z uprawnieniami księgowości otwiera moduł Formularze korekt.
+2.  Przechodzi do zakładki Korekty wybranego formularza.
+3.  Otwiera korektę oczekującą na etap księgowy.
+4.  Wybiera akcję Akceptuj korektę i wpisuje uwagi księgowości.
+
+Po akceptacji księgowości korekta przechodzi do statusu Oczekuje na finalną akceptację gospodarza.
+
+### Odrzucenie korekty \{#odrzucenie-korekty}
+
+1.  W module **Formularze korekt** otwórz wybrany formularz i przejdź do zakładki **Korekty**.
+2.  Otwórz korektę w statusie **Oczekuje na akceptację księgowości** i kliknij **Odrzuć korektę**.
+3.  W wymaganym polu **Uwagi do całej korekty** wpisz uzasadnienie odrzucenia.
+4.  Kliknij **Odrzuć korektę**, aby przekazać decyzję gospodarzowi. Przycisk **Anuluj** zamyka formularz bez zapisania decyzji.
+
+![Odrzucenie korekty przez Księgowość z wymaganym uzasadnieniem.](/img/podrecznik/img-084.png)
+
+Korekta otrzymuje status **Oczekuje na potwierdzenie odrzucenia przez gospodarza**. Gospodarz otrzymuje powiadomienie e-mail z uzasadnieniem księgowości. Dla jednostki korekta nadal pozostaje **W trakcie weryfikacji**; na tym etapie nie jest jeszcze wysyłane powiadomienie o końcowej decyzji.
+
+## 12.9. Finalna decyzja gospodarza \{#sekcja-12-9-finalna-decyzja-gospodarza}
+
+<Access roles="Gospodarz" />
+
+### Finalna akceptacja korekty \{#finalna-akceptacja-korekty}
+
+Finalna akceptacja kończy proces korekty i aktualizuje dane planu budżetowego oraz dostępne ilości produktów.
+
+Aby udzielić finalnej akceptacji:
+
+1.  Otwórz korektę w statusie Oczekuje na finalną akceptację gospodarza.
+2.  Zweryfikuj dane w zakładkach Szczegóły i Produkty.
+3.  Kliknij Akceptuj korektę.
+4.  Wpisz uwagi do finalnej decyzji i zatwierdź operację.
+
+**Ważne:** System sprawdza limity umów oraz pozostałą ilość z rezerwy. Jeśli finalna akceptacja przekroczyłaby limit kwotowy umowy lub spowodowałaby ujemną rezerwę produktu, operacja zostanie zablokowana.
+
+### Potwierdzenie odrzucenia przez księgowość \{#potwierdzenie-odrzucenia-przez-ksiegowosc}
+
+W zakładce **Korekty** odszukaj wniosek w statusie **Oczekuje na potwierdzenie odrzucenia przez gospodarza**. Odczytaj uzasadnienie w kolumnie **Uwagi z etapu księgowości**. Możesz przewinąć tabelę poziomo lub zmienić zestaw widocznych kolumn przyciskiem ustawień tabeli.
+
+Na tym etapie uwagi księgowości są dostępne w tabeli, natomiast nie są wyświetlane w szczegółach korekty.
+
+![Tabela korekt ze statusem oczekiwania na potwierdzenie odrzucenia i uzasadnieniem Księgowości.](/img/podrecznik/img-085.png)
+
+1.  Otwórz korektę i kliknij **Potwierdź odrzucenie**.
+2.  Wypełnij wymagane w formularzu pole **Uwagi gospodarza**, aby uzasadnić końcową decyzję.
+3.  Kliknij **Potwierdź odrzucenie**, aby zakończyć proces. Przycisk **Anuluj** zamyka formularz bez zmiany statusu.
+
+![Potwierdzenie odrzucenia korekty przez Gospodarza.](/img/podrecznik/img-086.png)
+
+**Ważne:** Gospodarz nie może zastąpić odrzucenia księgowości akceptacją. Dla korekty oczekującej na potwierdzenie odrzucenia akcja **Akceptuj korektę** jest niedostępna. Potwierdzenie zmienia status na **Odrzucony finalnie**, kończy proces negatywnie i nie wdraża wnioskowanych zmian planu budżetowego ani dostępnych ilości produktów.
+
+Po potwierdzeniu jednostka widzi status **Odrzucona**. W jej widoku **Powód odrzucenia** zawiera uzasadnienie księgowości, a **Uzasadnienie** — końcowe uwagi gospodarza. System uruchamia powiadomienie o końcowej decyzji dla Dyrektora i Operatora jednostki z odpowiednimi uprawnieniami.
+
+## 12.10. Widoki kontrolne formularza korekty \{#sekcja-12-10-widoki-kontrolne-formularza-korekty}
+
+<Access roles="Gospodarz" />
+
+Formularz korekty posiada widoki kontrolne ułatwiające analizę wpływu wniosków jednostek na umowy i produkty.
+
+Zakładka **Kontrola - Umowy** pokazuje podsumowanie zmian ilościowych i wartościowych w podziale na umowy dostawców, w tym limit kwotowy umowy, dostawcę, liczbę pozycji korekt oraz sumy bazowe, wnioskowane i zaakceptowane.
+
+![Zrzut ekranu](/img/podrecznik/img-087.jpg)
+
+Zakładka **Kontrola - Produkty** pokazuje analizę produktów w ujęciu zbiorczym, między innymi sumę planów, zmiany historyczne, liczbę zamówionych produktów, dostępne ilości, zmianę bieżącą, minima i maksima wynikające z umowy oraz pozostałą ilość z rezerwy.
+
+![Zrzut ekranu](/img/podrecznik/img-088.jpg)
+
+## 12.11. Eksport danych korekt \{#sekcja-12-11-eksport-danych-korekt}
+
+<Access roles="Gospodarz, Księgowość - zgodnie z uprawnieniami eksportu" />
+
+System umożliwia eksport danych korekt do pliku Excel:
+
+1.  W zakładce Korekty kliknij ikonę pobierania, aby wyeksportować listę korekt.
+2.  W zakładce Produkty kliknij ikonę pobierania, aby wyeksportować listę produktów objętych korektami.
+3.  Opcjonalnie ustaw filtry przed eksportem.
+
+**Ważne:** Jeśli przed eksportem zastosujesz filtry, te same filtry zostaną uwzględnione w wygenerowanym pliku Excel.
+
+## 12.12. Dziennik aktywności i powiadomienia \{#sekcja-12-12-dziennik-aktywnosci-i-powiadomienia}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+Operacje wykonywane na formularzach korekt i korektach są rejestrowane w dzienniku aktywności. W filtrze typu obiektu dostępne są pozycje Formularze korekt oraz Korekty budżetowe.
+
+System generuje powiadomienia dla najważniejszych etapów procesu, w szczególności po przekazaniu korekty do akceptacji dyrektora, przekazaniu jej do gospodarza, przekazaniu do księgowości, odrzuceniu oraz wydaniu decyzji finalnej.
+
+Po odrzuceniu korekty przez księgowość system wysyła gospodarzowi e-mail **Korekta planu budżetowego oczekuje na potwierdzenie odrzucenia**, zawierający uzasadnienie księgowości.
+
+Dopiero potwierdzenie odrzucenia przez gospodarza uruchamia e-mail oraz powiadomienie w aplikacji **Decyzja w sprawie korekty planu budżetowego** dla Dyrektora i Operatora jednostki.
+
+E-mail z końcową decyzją zawiera powód odrzucenia i końcowe uzasadnienie gospodarza; powiadomienie w aplikacji kieruje do sprawdzenia szczegółów.
+
+**Ważne:** Powiadomienia i dostęp do akcji zależą od przypisanych ról oraz uprawnień użytkownika.

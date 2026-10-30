@@ -1,0 +1,86 @@
+---
+title: "20. Dziennik aktywności i rejestr logowań"
+---
+
+Dostęp do modułu:
+
+-   Administrator Systemu: dziennik aktywności i rejestr logowań
+-   Gospodarz: dziennik aktywności
+-   Operator Systemu, Opiekun Jednostki, Reporter: dostęp wymaga nadania odpowiednich uprawnień
+
+Dziennik aktywności służy do przeglądania działań i zmian danych. Rejestr logowań pomaga ustalić, na którym etapie użytkownik napotkał problem z dostępem. Odczyt i eksport wymagają odpowiednio uprawnień **Odczyt** i **Eksport** w funkcji **Dziennik aktywności** lub **Rejestr logowania**.
+
+## 20.1. Przeglądanie dziennika aktywności \{#sekcja-20-1-przegladanie-dziennika-aktywnosci}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+1.  W menu głównym wybierz **Dziennik aktywności**.
+2.  Odszukaj działanie. W kolumnach **Typ obiektu** i **Obiekt** rozpoznasz dane, których dotyczy wpis, a w kolumnie **Aktywność** — rodzaj czynności.
+3.  Odczytaj osobę wykonującą działanie i czas jego zapisania. Przy wpisie udostępniającym szczegóły kliknij **Pokaż zmiany**.
+4.  W oknie **Historia zmian** porównaj wartości **Przed** i **Po** dla poszczególnych pól.
+
+![Zrzut ekranu](/img/podrecznik/img-156.png)
+
+Dostępność szczegółów zależy od rodzaju zapisanego działania. Jeżeli wpis nie wyjaśnia zgłoszenia, sprawdź także bieżące dane na ekranie, którego dotyczy problem.
+
+## 20.2. Filtrowanie dziennika aktywności \{#sekcja-20-2-filtrowanie-dziennika-aktywnosci}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+1.  Ustaw **Datę od** i **Datę do**, aby objąć okres szukanego działania.
+2.  Wybierz **Typ obiektu**, np. Użytkownik dla zmian kont albo Ustawienia dla zmian parametrów.
+3.  W razie potrzeby zawęź listę przez **Aktywność**, **Nazwę obiektu** lub **Użytkownika**.
+
+![Zrzut ekranu](/img/podrecznik/img-157.png)
+
+**Wskazówka:** filtr Użytkownik dotyczy osoby wykonującej działanie. Jeśli szukasz zmian na koncie innej osoby, odszukaj to konto jako obiekt wpisu.
+
+## 20.3. Eksport dziennika aktywności \{#sekcja-20-3-eksport-dziennika-aktywnosci}
+
+<Access roles="Administrator Systemu, Gospodarz — z uprawnieniem eksportu" />
+
+1.  Otwórz **Dziennik aktywności** i ustaw potrzebne filtry.
+2.  Kliknij ikonę z podpowiedzią **Pobierz XLSX** nad tabelą.
+3.  Otwórz pobrany arkusz. Zestawienie obejmuje wpisy odpowiadające ustawionym filtrom.
+
+## 20.4. Przeglądanie i filtrowanie rejestru logowań \{#sekcja-20-4-przegladanie-i-filtrowanie-rejestru-logowan}
+
+<Access roles="Administrator Systemu" />
+
+1.  W menu głównym wybierz **Rejestr logowań**.
+2.  W polu **Użytkownik** wpisz login osoby zgłaszającej problem. Ustaw **Datę od** i **Datę do**, aby objąć czas zgłoszonej próby.
+3.  Najpierw przejrzyj wszystkie zdarzenia tej osoby i porównaj ich kolejność w kolumnie **Data utworzenia**. Aby zawęzić listę do konkretnego rodzaju wpisu, użyj filtra **Zdarzenie**.
+
+![Zrzut ekranu](/img/podrecznik/img-158.png)
+
+-   **Poprawne logowanie** oznacza zakończone logowanie; **Błąd logowania** wskazuje nieudaną próbę.
+-   **Wysłanie kodu drugiego składnika**, **Poprawna weryfikacja drugiego składnika** i **Błędna weryfikacja drugiego składnika** opisują kolejne wyniki potwierdzania logowania kodem e-mail.
+-   Zdarzenia blokady logowania lub drugiego składnika wskazują ograniczenie kolejnych prób. Porównaj wpis z komunikatem otrzymanym przez użytkownika.
+-   Zdarzenia odmowy dostępu z powodu nieaktywnego lub wygasłego konta wymagają sprawdzenia pól **Aktywny** i **Data ważności konta**.
+-   Zdarzenie blokady konta z powodu braku aktywności wiąże się z ustawieniem opisanym w podrozdziale 25.1. **Przypomnienie hasła** dotyczy skorzystania z odzyskiwania hasła.
+
+Przy logowaniu z kodem możesz znaleźć kolejno wysłanie kodu, poprawną weryfikację i poprawne logowanie. Kolumny **Adres IP**, **Host** i **Klient** zawierają pomocnicze informacje o połączeniu i przeglądarce.
+
+## 20.5. Eksport rejestru logowań \{#sekcja-20-5-eksport-rejestru-logowan}
+
+<Access roles="Administrator Systemu — z uprawnieniem eksportu" />
+
+1.  Otwórz **Rejestr logowań** i ustaw filtry, np. login użytkownika i przedział dat.
+2.  Kliknij ikonę z podpowiedzią **Pobierz XLSX** nad tabelą.
+3.  Otwórz pobrany arkusz i sprawdź wpisy odpowiadające ustawionym filtrom.
+
+## 20.6. Diagnozowanie problemów z dostępem \{#sekcja-20-6-diagnozowanie-problemow-z-dostepem}
+
+<Access roles="Administrator Systemu" />
+
+Ustal, czy problem dotyczy logowania, czy czynności wykonywanej już po zalogowaniu. Poproś o login, czas próby, treść komunikatu i opis oczekiwanej czynności. Przy problemie podczas pracy ustal również jednostkę lub dostawcę.
+
+1.  Na liście **Użytkownicy** odszukaj konto i otwórz **Szczegóły**. Sprawdź **Aktywny**, **Datę ważności konta** i adres e-mail.
+2.  W **Rejestrze logowań** odszukaj zdarzenia z czasu próby. Przy zapomnianym haśle skieruj użytkownika do procedury 2.2. Przy czasowej blokadzie odczekaj okres wskazany w komunikacie. Przy problemie z kodem sprawdź adres skrzynki i procedurę 2.1.
+3.  Jeżeli konto ma ponownie działać, popraw jego aktywność lub termin ważności zgodnie z podrozdziałem 21.5.
+4.  Jeśli logowanie działa, lecz brakuje funkcji lub możliwości zapisu, sprawdź zakładkę **Role** użytkownika, zakres przypisania i właściwą jednostkę lub dostawcę. Następnie porównaj moduły, funkcje i typy operacji w definicji roli (rozdział 22).
+5.  Po zmianie sprawdź nowe logowanie i wykonanie potrzebnej czynności. W razie potrzeby porównaj także wpisy w **Dzienniku aktywności**.
+
+**Ważne:** Administrator Systemu nie otrzymuje automatycznie wszystkich funkcji biznesowych. Przykładowo dostęp do **Rejonów** wymaga odpowiedniego uprawnienia, które posiada Gospodarz.
+
+Jeżeli potrzebna jest pomoc techniczna, przekaż nazwę ekranu, adres strony, czas próby, treść komunikatu, wykonaną czynność oraz oczekiwany rezultat.

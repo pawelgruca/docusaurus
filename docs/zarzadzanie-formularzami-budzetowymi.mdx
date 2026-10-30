@@ -1,0 +1,137 @@
+---
+title: "11. Zarządzanie formularzami budżetowymi"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** pełny dostęp
+-   **Operator Systemu:** brak dostępu
+-   **Gospodarz:** pełny dostęp
+-   **Opiekun Jednostki:** brak dostępu
+-   **Reporter:** brak dostępu
+
+Formularze budżetowe stanowią podstawę do tworzenia planów budżetowych przez jednostki organizacyjne. Użytkownicy z odpowiednimi uprawnieniami mają możliwość przeglądania, tworzenia, edytowania i usuwania formularzy, które są udostępniane jednostkom organizacyjnym w celu zbierania informacji budżetowych.
+
+## 11.1. Szablon formularza budżetowego \{#sekcja-11-1-szablon-formularza-budzetowego}
+
+<Access roles="Gospodarz" />
+
+Szablon formularza budżetowego jest plikiem XLSX z listą produktów, przeznaczonym do uzupełnienia przez jednostkę. Administrator przygotowuje dane produktów w kolumnach B–G. Jednostka uzupełnia kolumnę A swoją nazwą skróconą, a kolumnę H planowaną ilością.
+
+Dane do importu znajdują się w pierwszym arkuszu pliku. Arkusz zawiera osiem kolumn A–H: nagłówki w wierszu 1, numery kolumn w wierszu 2 i produkty od wiersza 3.
+
+**Ważne:** prawidłowy import wymaga zachowania kolejności kolumn i dwóch pierwszych wierszy. Usunięcie wiersza z numerami kolumn może spowodować pominięcie pierwszego produktu bez komunikatu o błędzie.
+
+![Zrzut ekranu](/img/podrecznik/img-067.png)
+
+**Opis kolumn szablonu**
+
+| **Kol.** | **Nagłówek** | **Zawartość i sposób uzupełnienia** |
+| --- | --- | --- |
+| A | Jednostka oświatowa | Nazwa skrócona jednostki, np. P14, przy każdej pozycji. |
+| B | Kategoria | Nazwa kategorii produktu, zgodnie z systematyką określoną w module **Kategorie**. |
+| C | Podkategoria | Nazwa podkategorii produktu, zgodnie z systematyką określoną w module **Kategorie**. |
+| D | Kod Produktu GCUW | Kod z modułu **Produkt**y, np. 02-02-000700; wartość tekstowa z zachowaniem zer i łączników. |
+| E | Nazwa towaru z OPZ | Nazwa produktu z opisu, zgodnie z treścią opisu przedmiotu zamówienia (OPZ) w umowie z dostawcą. |
+| F | Opis towaru z OPZ | Opis produktu, zgodnie z treścią opisu przedmiotu zamówienia (OPZ) w umowie z dostawcą. |
+| G | JM | Jednostka miary produktu, np. szt. lub op. |
+| H | Planowana ilość wg JM | Planowana ilość w jednostce miary z kolumny G; liczba nieujemna. |
+
+**Ważne:** przy dodawaniu szablonu system sprawdza tylko format i rozmiar pliku. Błędy układu arkusza lub danych mogą ujawnić się dopiero przy imporcie wypełnionego pliku przez jednostkę.
+
+**Komunikaty walidacji przy imporcie**
+
+Poniższe komunikaty walidacji wyjaśniają przyczyny typowych błędów podczas importu wypełnionego arkusza przez jednostkę. Dotyczą zarówno nowego planu, jak i uzupełnienia aktywnego planu.
+
+| **Komunikat** | **Przyczyna błędu** |
+| --- | --- |
+| „Nie udało się pobrać wartości.” | We wskazanym wierszu i kolumnie brakuje komórki wymaganej do importu. Może to wynikać z niekompletnego układu arkusza. |
+| „Nie podano kodu jednostki.” | W kolumnie A nie podano nazwy skróconej jednostki. Jest ona wymagana przy każdej pozycji arkusza. |
+| „Podana wartość planowanego użycia nie jest liczbą.” lub „Ilość nie może być ujemna.” | W kolumnie H znajduje się wartość tekstowa zamiast liczby albo liczba ujemna. Planowana ilość musi być liczbą nieujemną. |
+| „Produkt nie znajduje się w szablonie formularza.” | Kod w kolumnie D nie występuje w szablonie dołączonym do formularza uzupełnienia aktywnego planu. Uzupełnienie dopuszcza wyłącznie produkty z tego szablonu. |
+| „Produkt nie jest dostępny w aktywnej umowie jednostki.” | Produkt nie jest dostępny dla jednostki w aktywnej umowie. Dostępność zależy także od przypisania umowy do kategorii w rejonie jednostki — zob. [**18.5**](/docs/zarzadzanie-rejonami#sekcja-18-5-zarzadzanie-umowami-rejonu). |
+
+## 11.2. Przeglądanie formularzy budżetowych \{#sekcja-11-2-przegladanie-formularzy-budzetowych}
+
+<Access roles="Gospodarz" />
+
+Aby uzyskać dostęp do listy wszystkich formularzy budżetowych w systemie w menu głównym (po lewej stronie ekranu) wybierz opcję **Formularze budżetowe**. System wyświetli ekran z listą dostępnych formularzy.
+
+W kolumnie **Rodzaj** widoczny jest **Nowy plan budżetowy** albo **Uzupełnienie aktywnego planu**. Kolumna **Status** pozwala odróżnić formularz ***Roboczy*** od ***Aktywnego***.
+
+![Zrzut ekranu](/img/podrecznik/img-068.png)
+
+## 11.3. Filtrowanie formularzy budżetowych \{#sekcja-11-3-filtrowanie-formularzy-budzetowych}
+
+<Access roles="Gospodarz" />
+
+Aby szybko znaleźć konkretne formularze skorzystaj z panelu filtrów znajdującego się powyżej listy formularzy. Po ustawieniu filtrów lista formularzy automatycznie się odświeży.
+
+W filtrze **Typ** wybierz **Nowy plan budżetowy** lub **Uzupełnienie aktywnego planu**. Filtr **Status** pozwala wyszukać formularze *Robocze* albo *Aktywne*.
+
+![Zrzut ekranu](/img/podrecznik/img-069.png)
+
+## 11.4. Dodawanie nowych formularzy budżetowych \{#sekcja-11-4-dodawanie-nowych-formularzy-budzetowych}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-070.png)
+
+Tworzenie nowych formularzy budżetowych jest jednym z kluczowych zadań użytkowników z odpowiednimi uprawnieniami:
+
+1.  W menu głównym wybierz opcję **Formularze budżetowe**.
+2.  Kliknij przycisk **Dodaj formularz budżetowy** znajdujący się w prawym górnym rogu ekranu.
+3.  System wyświetli kreator tworzenia nowego formularza budżetowego: **Rodzaj** → **Dane** → **Szablon** → **Podsumowanie**.
+4.  **Rodzaj** — wybierz **Nowy plan budżetowy**, aby przygotować plan na kolejny okres, albo **Uzupełnienie aktywnego planu**, aby dodać nowe produkty do już aktywnego planu jednostki. Kliknij **Dalej**.
+5.  **Dane** — wpisz **Nazwę** i **Termin wypełnienia formularza do**, określający datę końcową na przekazanie danych przez jednostki. Dla **Nowego planu budżetowego** uzupełnij również pola **Data obowiązywania od** i **Data obowiązywania do**. Dla uzupełnienia nie podaje się tych dat; korzystają z niego jednostki posiadające aktywny plan. Kliknij **Dalej**.
+
+![Zrzut ekranu](/img/podrecznik/img-071.png)
+
+![Zrzut ekranu](/img/podrecznik/img-072.png)
+
+1.  **Szablon** — dodaj plik XLSX przyciskiem **Wybierz plik** albo przeciągnij go do wskazanego obszaru. Maksymalny rozmiar pliku wynosi 10 MB. Dla **Nowego planu budżetowego** szablon jest opcjonalny; jeżeli go dodajesz, powinien obejmować kompletną listę produktów na wybrany okres. Do dopisywania nowych produktów do już aktywnego planu wybierz **Uzupełnienie aktywnego planu**. Układ arkusza opisano w [podrozdziale 11.1](/docs/zarzadzanie-formularzami-budzetowymi#sekcja-11-1-szablon-formularza-budzetowego).
+2.  Dla **Uzupełnienia aktywnego planu** szablon XLSX jest wymagany i powinien zawierać wyłącznie nowe produkty z zamówienia uzupełniającego. Jednostka może podać ilości tylko dla produktów zawartych w szablonie. Kliknij **Dalej**.
+
+![Zrzut ekranu](/img/podrecznik/img-073.png)
+
+1.  **Podsumowanie** — przed zapisaniem formularza sprawdź, czy rodzaj, nazwa, termin wypełnienia i szablon odpowiadają danym, które chcesz udostępnić jednostkom. Dla nowego planu sprawdź również okres obowiązywania. Jeśli dane wymagają poprawy, kliknij **Wstecz**, aby wrócić do wcześniejszego kroku kreatora.
+
+![Zrzut ekranu](/img/podrecznik/img-074.png)
+
+1.  Kliknij **Zapisz jako roboczy**, aby utworzyć formularz ze statusem **Roboczy**. Zapis nie udostępnia go jeszcze jednostkom.
+
+**Ważne:** Po zapisaniu roboczym otwórz formularz i kliknij **Aktywuj formularz**. System poprosi o potwierdzenie operacji; po aktywacji formularz uzyska status **Aktywny** i będzie dostępny w e-Sklepie dla uprawnionych jednostek. Aktywne uzupełnienie planu jest dostępne tylko do podglądu.
+
+## 11.5. Szczegóły formularza budżetowego \{#sekcja-11-5-szczegoly-formularza-budzetowego}
+
+<Access roles="Gospodarz" />
+
+Aby zobaczyć szczegółowe informacje dotyczące konkretnego formularza:
+
+1.  Otwórz szczegóły formularza budżetowego, klikając wiersz wybranego formularza albo wybierając opcję **Edytuj** z menu trzech kropek (⋮) na końcu tego wiersza. Dla aktywnego uzupełnienia planu wybierz opcję **Podgląd**.
+2.  System wyświetli ekran ze szczegółami formularza budżetowego
+3.  W szczegółach formularza dostępne są podstawowe informacje (rodzaj, nazwa, termin wypełnienia, szablon XLSX i okres obowiązywania dla nowego planu) oraz informacje o jednostkach, które wypełniły formularz i oczekują na zatwierdzenie planu. Jeżeli dołączono szablon, wybierz **Pobierz aktualny szablon**, aby zapisać jego bieżącą wersję. Układ arkusza i opis kolumn przedstawiono w [podrozdziale 11.1](/docs/zarzadzanie-formularzami-budzetowymi#sekcja-11-1-szablon-formularza-budzetowego).
+
+## 11.6. Edytowanie formularzy budżetowych \{#sekcja-11-6-edytowanie-formularzy-budzetowych}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-075.png)
+
+1.  Z widoku tabeli wybierz konkretny formularz budżetowy, klikając na odpowiedni wiersz lub korzystając z opcji ikony trzech kropek (⋮) wybierając opcję **Edytuj**.
+2.  System wyświetli formularz z aktualnymi danymi.
+
+Edycja odbywa się w formularzu z polami, bez przechodzenia przez kroki kreatora. W przypadku **Uzupełnienia aktywnego planu** pola dat obowiązywania nie są wyświetlane. Aktywnego uzupełnienia nie można edytować; w menu jego wiersza dostępna jest opcja **Podgląd**.
+
+1.  Zmień potrzebne dane. Aby podmienić szablon, przy polu **Szablon planu budżetowego** kliknij **Wybierz plik** albo przeciągnij nowy plik XLSX do wskazanego obszaru. Przygotowanie arkusza opisano w [podrozdziale 11.1](/docs/zarzadzanie-formularzami-budzetowymi#sekcja-11-1-szablon-formularza-budzetowego).
+2.  Po wprowadzeniu zmian kliknij **Zapisz**. Aby sprawdzić zapisany arkusz, wybierz **Pobierz aktualny szablon**. Przycisk **Anuluj** odrzuca niezapisane zmiany.
+
+## 11.7. Usuwanie formularzy budżetowych \{#sekcja-11-7-usuwanie-formularzy-budzetowych}
+
+<Access roles="Gospodarz" />
+
+![Zrzut ekranu](/img/podrecznik/img-076.png)
+
+1.  Z widoku tabeli wybierz konkretny formularz budżetowy, klikając na odpowiedni wiersz lub korzystając z opcji ikony trzech kropek (⋮) wybierając opcję **Usuń**.
+2.  System wyświetli okno dialogowe z prośbą o potwierdzenie operacji.
+3.  Kliknij **Potwierdź**, aby zatwierdzić usunięcie formularza.

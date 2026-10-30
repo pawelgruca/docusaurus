@@ -1,0 +1,213 @@
+---
+title: "16. Zarządzanie powiadomieniami i banerami"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** pełny dostęp
+-   **Gospodarz:** pełny dostęp
+-   **Operator Systemu:** odbieranie skierowanych do niego powiadomień i komunikatów
+-   **Opiekun Jednostki:** odbieranie skierowanych do niego powiadomień i komunikatów
+-   **Księgowość:** odbieranie skierowanych do niej powiadomień i komunikatów
+-   **Reporter:** odbieranie skierowanych do niego powiadomień i komunikatów
+
+Moduł **Powiadomienia** służy do przygotowywania własnych wiadomości e-mail oraz powiadomień w aplikacji. Można wysłać je od razu albo zaplanować na późniejszy termin. W module **Banery** zarządza się komunikatami widocznymi u góry stron aplikacji.
+
+Pozycja **Powiadomienia** w bocznym menu prowadzi do zarządzania wysyłką. Ikona dzwonka i opcja **Powiadomienia** w menu użytkownika otwierają wiadomości otrzymane przez zalogowaną osobę. Ustawienia szablonów powiadomień automatycznych opisano w podrozdziale **25.2**.
+
+## 16.1. Przeglądanie powiadomień \{#sekcja-16-1-przegladanie-powiadomien}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+1.  W bocznym menu wybierz **Powiadomienia**.
+2.  W zakładce **Zaplanowane** sprawdź oczekujące zlecenia i zlecenia zakończone błędem. Tabela pokazuje m.in. tytuł, treść, kanał, sposób wyboru odbiorców, termin, status i liczbę wysłanych wiadomości oraz niepowodzeń.
+3.  Aby zawęzić listę, użyj filtrów **Kanał**, **Status**, **Typ odbiorców** oraz **Data zaplanowanej wysyłki od** i **Data zaplanowanej wysyłki do**.
+4.  Wybierz zakładkę **Wysłane**, aby przejrzeć wyniki wysyłki do poszczególnych odbiorców. W tej zakładce filtry dat odnoszą się do daty wysłania.
+
+![Lista zleceń powiadomień w zakładce Zaplanowane.](/img/podrecznik/img-116.png)
+
+**Ważne:** Nazwa zakładki **Zaplanowane** nie oznacza, że każda widoczna pozycja czeka na przyszłą wysyłkę. Domyślnie lista obejmuje również statusy **Nowe**, **Przetwarzane** i **Błąd**. Aby odszukać np. zlecenia anulowane lub zakończone, wybierz odpowiedni status w filtrze.
+
+Najedź wskaźnikiem na skróconą treść w tabeli, aby odczytać ją w całości. W razie potrzeby zmień sortowanie lub przejdź do kolejnej strony listy.
+
+## 16.2. Tworzenie i wysyłanie powiadomienia \{#sekcja-16-2-tworzenie-i-wysylanie-powiadomienia}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+Kreator prowadzi przez przygotowanie wiadomości. W każdym zleceniu wybiera się jeden kanał: **E-mail** albo **W aplikacji**. Aby przekazać wiadomość oboma kanałami, przygotuj osobne zlecenie dla każdego z nich.
+
+1.  Na liście **Powiadomienia** kliknij **Nowe powiadomienie**.
+2.  W kroku **Kanał** wybierz **E-mail**, jeżeli wiadomość ma trafić na adresy e-mail użytkowników, albo **W aplikacji**, jeżeli ma pojawić się w ich panelu powiadomień. Kliknij **Dalej**.
+
+![Pierwszy krok kreatora z wyborem kanału komunikacji.](/img/podrecznik/img-117.png)
+
+1.  W kroku **Odbiorcy** wybierz jeden sposób określenia adresatów: **Role**, **Jednostki**, **Dostawcy** albo **Użytkownicy**. W ramach wybranego sposobu możesz wskazać wiele pozycji. Dostępność opcji **Dostawcy** zależy od uprawnień.
+    1.  **Role:** Wyszukaj role i zaznacz co najmniej jedną. Wiadomość zostanie skierowana do aktywnych użytkowników przypisanych do wskazanych ról.
+
+![Wybór ról odbiorców powiadomienia.](/img/podrecznik/img-118.png)
+
+-   1.  **Jednostki:** zaznacz co najmniej jedną jednostkę. Możesz wcześniej wybrać **Typ jednostki**. Wybór typu zaznacza należące do niego placówki; następnie możesz ręcznie odznaczyć te, które nie mają otrzymać wiadomości. Usunięcie typu usuwa zaznaczenia jednostek tego typu. Po każdej zmianie typu sprawdź cały zestaw odbiorców.
+
+W polu **Szukaj jednostki…** zawęź widoczną listę według nazwy, skrótu lub typu. Wyszukiwanie nie usuwa zaznaczeń ukrytych pozycji. Pole **Wszystkie** zaznacza albo odznacza tylko jednostki widoczne przy bieżących filtrach. Licznik **Wybrano** obejmuje wszystkie zaznaczone jednostki.
+
+Bez dodatkowego zawężenia odbiorcami są aktywni użytkownicy wskazanych jednostek. Aby ograniczyć wiadomość do określonych ról, włącz **Zawęź do wybranych ról jednostek** i wybierz co najmniej jedną rolę, np. Operator jednostki.
+
+![Zrzut ekranu](/img/podrecznik/img-119.png)
+
+-   1.  **Dostawcy:** wiadomość jest kierowana do operatorów dostawców. Opcja jest dostępna dla osób z uprawnieniem odczytu użytkowników dostawców (**Zarządzanie użytkownikami dostawcy**).
+
+Włącz wybór wszystkich dostawców, aby objąć operatorów wszystkich aktywnych firm. Aby ograniczyć odbiorców, wyłącz przełącznik i zaznacz co najmniej jednego dostawcę na liście.
+
+![Zrzut ekranu](/img/podrecznik/img-120.png)
+
+![Zrzut ekranu](/img/podrecznik/img-121.png)
+
+-   1.  **Użytkownicy:** W polu wyszukiwania wpisz imię, nazwisko, login lub e-mail. Zaznacz osoby w tabeli. Licznik **Wybrano** pokazuje liczbę wskazanych osób; zaznaczenia są zachowywane przy wyszukiwaniu kolejnych użytkowników i zmianie strony. Checkbox w nagłówku zaznacza użytkowników na bieżącej stronie tabeli.
+
+![Wyszukanie i zaznaczenie indywidualnego odbiorcy.](/img/podrecznik/img-122.png)
+
+1.  Po sprawdzeniu odbiorców kliknij **Dalej**.
+
+### Kopia e-mail \{#kopia-e-mail}
+
+1.  Dla kanału **E-mail** pojawia się opcjonalny krok **Kopia**. W polu **Adres e-mail** wpisz adres spoza systemu i kliknij **Dodaj** lub naciśnij Enter. Powtórz czynność dla kolejnych adresów. Błędną pozycję usuń ikoną krzyżyka przy adresie. Możesz też pozostawić listę pustą i przejść dalej.
+
+![Opcjonalne adresy kopii wiadomości e-mail.](/img/podrecznik/img-123.png)
+
+Każdy adres otrzymuje niezależną wiadomość i nie jest widoczny dla pozostałych odbiorców. Powtórzony adres kopii nie jest dodawany drugi raz. Osoby posiadające konto wybiera się w kroku **Odbiorcy**; krok **Kopia** służy do ręcznego wpisywania adresów. Dla kanału **W aplikacji** ten krok jest pomijany.
+
+### Termin, treść i wysłanie \{#termin-tresc-i-wyslanie}
+
+1.  W kroku **Termin** pozostaw **Wyślij natychmiast**, aby zlecenie trafiło do kolejki od razu po zatwierdzeniu. Planowanie przyszłej wysyłki — zob. podrozdział **16.3**. Kliknij **Dalej**.
+2.  W kroku **Treść** wpisz **Tytuł powiadomienia** oraz **Treść**. Oba pola są wymagane. Tytuł może mieć maksymalnie 255 znaków. **Treść** jest zwykłym tekstem; można stosować podział na wiersze.
+3.  Sprawdź **Podgląd**. Jeżeli chcesz poprawić kanał, odbiorców lub termin, użyj **Wstecz** albo wróć do wcześniejszego kroku kreatora.
+4.  Po sprawdzeniu danych kliknij **Wyślij powiadomienie**. Zlecenie zostanie zapisane i przekazane do realizacji. Wynik sprawdzisz na listach powiadomień.
+
+![Tytuł, treść i podgląd wiadomości e-mail przed wysłaniem.](/img/podrecznik/img-124.png)
+
+Dla kanału **W aplikacji** tytuł i treść zostaną pokazane w panelu powiadomień odbiorcy. Dla kanału **E-mail** tytuł stanowi temat wiadomości, a treść jest umieszczana w systemowym układzie e-maila.
+
+![Podgląd powiadomienia w aplikacji w czteroetapowym kreatorze.](/img/podrecznik/img-125.png)
+
+Przycisk **Wyczyść formularz** po potwierdzeniu usuwa wprowadzone dane i wybranych odbiorców. Nie anuluje wcześniej zapisanych zleceń. Niezapisany formularz nie jest wersją roboczą dostępną na liście powiadomień.
+
+## 16.3. Planowanie wysyłki \{#sekcja-16-3-planowanie-wysylki}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+1.  Przygotuj kanał i odbiorców zgodnie z podrozdziałem **16.2**.
+2.  W kroku **Termin** wybierz **Zaplanuj wysyłkę**.
+3.  W polu **Data i godzina** otwórz kalendarz, wskaż dzień i ustaw godzinę oraz minuty. Termin musi przypadać w przyszłości.
+4.  Kliknij **Dalej**, uzupełnij tytuł i treść oraz sprawdź podgląd.
+5.  Kliknij **Zaplanuj powiadomienie**. Zlecenie pojawi się w zakładce **Zaplanowane** ze wskazanym terminem.
+
+![Wybór przyszłego terminu wysyłki powiadomienia.](/img/podrecznik/img-126.png)
+
+**Ważne:** Odbiorcy są ustalani w momencie realizacji zlecenia. Zmiany aktywności użytkowników oraz przypisań do wskazanych ról lub jednostek mogą wpłynąć na ostateczną listę odbiorców. Samo zaplanowanie nie oznacza wysłania wiadomości.
+
+Zapisane zlecenie nie ma formularza edycji. Jeżeli przed rozpoczęciem wysyłki chcesz poprawić treść, odbiorców lub termin, anuluj zaplanowaną wysyłkę i utwórz nowe zlecenie.
+
+## 16.4. Anulowanie zaplanowanej wysyłki \{#sekcja-16-4-anulowanie-zaplanowanej-wysylki}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+1.  Otwórz **Powiadomienia** i zakładkę **Zaplanowane**.
+2.  Odszukaj zlecenie o statusie **Zaplanowane**. Sprawdź tytuł oraz termin, aby wybrać właściwą wiadomość.
+3.  Kliknij **Anuluj przyszłą wysyłkę** przy wybranym zleceniu.
+4.  W oknie **Anulować przyszłą wysyłkę?** kliknij **Anuluj przyszłą wysyłkę**, aby zapisać decyzję. Przycisk **Anuluj** zamyka okno bez zmiany zlecenia.
+
+![Potwierdzenie anulowania przyszłej wysyłki.](/img/podrecznik/img-127.png)
+
+Po potwierdzeniu zlecenie otrzymuje status **Anulowane** i nie zostanie wysłane w zaplanowanym terminie. Aby je ponownie odnaleźć, wybierz ten status w filtrze. Operacji nie można cofnąć.
+
+**Ważne:** Można anulować tylko zlecenie zaplanowane, którego wysyłka jeszcze się nie rozpoczęła. Obecność przycisku przy innym statusie nie oznacza, że operacja zostanie dopuszczona. Anulowanie nie wycofuje wiadomości już wysłanych.
+
+## 16.5. Sprawdzanie wyników wysyłki \{#sekcja-16-5-sprawdzanie-wynikow-wysylki}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+1.  Przejdź do zakładki **Wysłane**.
+2.  W razie potrzeby zastosuj filtry **Kanał**, **Status**, **Typ odbiorców**, **Data wysłania od** i **Data wysłania do**.
+3.  Odszukaj tytuł wiadomości i sprawdź wiersze poszczególnych odbiorców. Jedno zlecenie może mieć wiele wierszy; kopie e-mail również mają osobne wpisy.
+4.  Odczytaj **Status** i **Datę wysłania**. Dla pozycji ze statusem **Błąd** sprawdź **Przyczynę niepowodzenia**.
+5.  Dla kanału **W aplikacji** sprawdź **Datę odczytania**. Jest uzupełniana po oznaczeniu powiadomienia jako przeczytanego przez odbiorcę.
+
+![Zrzut ekranu](/img/podrecznik/img-128.png)
+
+Status pojedynczej wysyłki może mieć wartość **Oczekuje**, **Wysłane** albo **Błąd**. Zlecenie jako całość może zakończyć się statusem **Wysłane**, **Wysłane częściowo** lub **Błąd**. W razie częściowego powodzenia sprawdź wyniki dla poszczególnych adresatów przed przygotowaniem kolejnej wiadomości.
+
+**Ważne:** Dla e-maila status **Wysłane** oznacza poprawne wykonanie wysyłki przez system; nie potwierdza przeczytania wiadomości. Pole **Data odczytania** nie służy do śledzenia otwierania e-maili. Pusta data odczytania powiadomienia w aplikacji oznacza brak zapisanego oznaczenia jako przeczytane.
+
+## 16.6. Przeglądanie banerów \{#sekcja-16-6-przegladanie-banerow}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+1.  W bocznym menu wybierz **Banery**.
+2.  Na liście sprawdź **Treść komunikatu**, **Początek widoczności**, **Koniec widoczności**, **Poziom komunikatu**, datę aktualizacji i autora.
+3.  Najedź wskaźnikiem na skróconą treść, aby odczytać cały komunikat. Kliknij wiersz, aby otworzyć jego szczegóły.
+
+![Lista banerów, w tym komunikatów z zakończonym okresem widoczności.](/img/podrecznik/img-129.png)
+
+Lista obejmuje również komunikaty, których termin widoczności jeszcze nie nadszedł albo już minął. Samo występowanie komunikatu na liście nie oznacza, że jest obecnie wyświetlany odbiorcom. Na liście poziomy mogą być opisane jako **Zielony** i **Czerwony**; odpowiadają opcjom **Neutralny** i **Ostrzeżenie** w formularzu.
+
+## 16.7. Dodawanie baneru \{#sekcja-16-7-dodawanie-baneru}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+1.  Na liście **Banery** kliknij **Dodaj komunikat**.
+2.  W razie potrzeby określ **Początek widoczności** i **Koniec widoczności**. Pola są opcjonalne. Puste pole oznacza brak ograniczenia z danej strony przedziału. Data końca nie może być wcześniejsza niż data początku.
+3.  Wybierz **Poziom komunikatu**: **Neutralny** dla zwykłej informacji albo **Ostrzeżenie** dla komunikatu wymagającego szczególnej uwagi.
+4.  W sekcji Widoczność komunikatu zaznacz odpowiednie miejsca: Wyświetlaj w sklepie, Wyświetlaj w panelu administracyjnym lub Wyświetlaj w panelu dostawcy. Możesz zaznaczyć więcej niż jedno miejsce.
+5.  Wpisz wymagane pole **Treść komunikatu**. Baner nie ma osobnego pola tytułu.
+6.  Sprawdź dane i kliknij **Zapisz**. Komunikat będzie dostępny w wybranych częściach aplikacji w ustalonym okresie.
+
+![Zrzut ekranu](/img/podrecznik/img-130.png)
+
+Daty graniczne są wliczane do okresu widoczności. Baner bez obu dat nie ma ograniczenia czasowego. Jeżeli nie zaznaczono żadnego miejsca wyświetlania, odbiorcy nie zobaczą komunikatu.
+
+Banery są przeznaczone dla użytkowników wskazanej części aplikacji. W tym formularzu nie wybiera się indywidualnych osób, ról ani jednostek. Przycisk **Anuluj** przywraca początkowe wartości niezapisanego formularza.
+
+## 16.8. Edytowanie baneru \{#sekcja-16-8-edytowanie-baneru}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+1.  Na liście **Banery** kliknij wiersz komunikatu albo wybierz **Edytuj** z menu po prawej stronie wiersza.
+2.  Zmień treść, poziom, daty lub miejsca wyświetlania.
+3.  Kliknij **Zapisz**, aby zachować zmiany. System potwierdzi operację komunikatem **Zapisano zmiany**. Przycisk **Anuluj** przywraca zapisane wcześniej wartości formularza.
+
+![Formularz edycji istniejącego baneru.](/img/podrecznik/img-131.png)
+
+Zmiana dat lub widoczności wpływa na dostępność komunikatu dla odbiorców. Przykładowo ustawienie przyszłej daty początku odracza jego wyświetlanie, a upływ daty końca wyłącza widoczność bez usuwania wpisu z listy.
+
+## 16.9. Usuwanie baneru \{#sekcja-16-9-usuwanie-baneru}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+1.  Na liście **Banery** otwórz menu po prawej stronie właściwego wiersza.
+2.  Wybierz **Usuń**.
+3.  W oknie potwierdzenia kliknij **Potwierdź**, aby trwale usunąć komunikat, albo **Anuluj**, aby pozostawić go bez zmian.
+
+![Potwierdzenie usunięcia baneru.](/img/podrecznik/img-132.png)
+
+Usunięty komunikat znika z listy banerów i nie jest już udostępniany odbiorcom. Usuwania wpisu przez Administratora lub Gospodarza nie należy utożsamiać z zamknięciem baneru przez użytkownika.
+
+## 16.10. Odczytywanie powiadomień i komunikatów \{#sekcja-16-10-odczytywanie-powiadomien-i-komunikatow}
+
+<Access roles="Administrator Systemu, Operator Systemu, Gospodarz, Opiekun Jednostki, Księgowość, Reporter" />
+
+1.  Kliknij ikonę dzwonka w górnej części ekranu albo otwórz menu użytkownika i wybierz **Powiadomienia**.
+2.  Przełączaj zakładki **Wszystkie** i **Nieprzeczytane**, aby wyświetlić odpowiednią listę.
+3.  Odczytaj tytuł, treść i czas powiadomienia. Kropka przy tytule oznacza brak oznaczenia jako przeczytane.
+4.  Aby potwierdzić odczytanie, kliknij przy danej wiadomości ikonę **Oznacz jako przeczytane**. Samo otwarcie panelu nie wykonuje tej operacji.
+
+![Zrzut ekranu](/img/podrecznik/img-133.png)
+
+Lista zawiera wiadomości skierowane do zalogowanej osoby. Komunikat **Brak powiadomień** oznacza pustą listę w wybranej zakładce. Powiadomienia wysłane kanałem **E-mail** odczytuje się w skrzynce pocztowej; wybór tego kanału nie tworzy dodatkowej wiadomości pod dzwonkiem.
+
+Aktywny baner jest wyświetlany u góry strony. Kliknij **Więcej**, aby otworzyć okno **Komunikaty** z pełną treścią dostępnych banerów. Przy kilku komunikatach pasek pokazuje kolejne pozycje naprzemiennie.
+
+Ikona krzyżyka na pasku ukrywa pasek, a przy komunikacie w oknie usuwa go z bieżącego widoku. Nie usuwa to komunikatu z systemu; po ponownym wczytaniu danych użytkownika nadal aktywny baner może pojawić się ponownie.
+
+![Aktywny baner w panelu administracyjnym.](/img/podrecznik/img-134.png)
+
+![Pełna treść baneru w oknie Komunikaty.](/img/podrecznik/img-135.png)

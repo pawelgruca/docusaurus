@@ -1,0 +1,141 @@
+---
+title: "25. Dodatkowe ustawienia systemu"
+---
+
+**Dostęp do modułu:**
+
+-   **Administrator Systemu:** dostęp do parametrów aplikacji, szablonów powiadomień i reguł walidacyjnych
+-   **Operator Systemu: konfiguracja własnego menu; brak dostępu do parametrów aplikacji i reguł walidacyjnych**
+-   **Gospodarz:** dostęp do szablonów powiadomień
+-   **Opiekun Jednostki:** brak dostępu
+-   **Reporter:** brak dostępu
+
+Zakładka Ustawienia zawiera również inne ważne elementy konfiguracyjne, które umożliwiają dostosowanie działania systemu e-Sklep do specyficznych potrzeb organizacji.
+
+![Zrzut ekranu](/img/podrecznik/img-191.png)
+
+## 25.1. Parametry aplikacji \{#sekcja-25-1-parametry-aplikacji}
+
+<Access roles="Administrator Systemu" />
+
+Parametry aplikacji określają wspólne zasady jej działania. Uprawnienie **Odczyt** w funkcji **Parametry aplikacji** pozwala przeglądać ustawienia, a **Edycja** — zmieniać wartości.
+
+### Otwieranie i zmiana parametru \{#otwieranie-i-zmiana-parametru}
+
+1.  Wybierz **Ustawienia → Parametry aplikacji**.
+2.  Wybierz grupę odpowiadającą zadaniu: **Hasła i polityka haseł**, **Sesja i logowanie** albo **Zamówienia**.
+3.  Odszukaj parametr po opisie i odczytaj zapisaną wartość. Kliknij wiersz parametru lub znajdującą się przy nim ikonę edycji.
+4.  W oknie **Edytuj parametr aplikacji** wprowadź nową wartość. Zwróć uwagę na jednostkę podaną w opisie, np. minuty lub dni.
+
+![Zrzut ekranu](/img/podrecznik/img-192.png)
+
+1.  Kliknij **Zapisz**. Po zamknięciu okna sprawdź wartość na liście. **Anuluj** zamyka okno bez zapisania zmian. Jeżeli zapis zostanie odrzucony, odczytaj komunikat przy polu i popraw wartość.
+
+### Hasła i polityka haseł \{#hasla-i-polityka-hasel}
+
+Ustawienia w tej grupie określają wymagania obowiązujące przy ustawianiu nowego hasła. Aktualne wartości odczytuj w aplikacji; mogą zostać zmienione przez uprawnionego administratora.
+
+-   **Minimalna i maksymalna długość hasła** — wyznaczają dopuszczalną liczbę znaków.
+-   **Minimalna liczba wielkich liter**, **małych liter**, **cyfr** i **znaków specjalnych** — określa wymagany udział każdego rodzaju znaków. Wartość 0 oznacza brak wymogu dla danego rodzaju.
+-   **Liczba dni ważności hasła** — określa okres używania hasła, po którym aplikacja wymaga jego zmiany. Wartość **0 wyłącza wygasanie hasła**.
+-   **Liczba ostatnich haseł objętych historią** — określa, ile wcześniejszych haseł nie może zostać ponownie użytych. Wartość **0 wyłącza sprawdzanie historii**.
+
+![Zrzut ekranu](/img/podrecznik/img-193.png)
+
+Sposób ustawiania hasła i jego zmiany opisano w podrozdziałach 2.1–2.3. Po zmianie polityki sprawdź jej działanie na koncie przeznaczonym do testów.
+
+### Sesja i czasowe blokowanie logowania \{#sesja-i-czasowe-blokowanie-logowania}
+
+Grupa **Sesja i logowanie** zawiera ustawienia czasu pracy bez aktywności oraz ochrony przed powtarzanymi błędnymi próbami logowania.
+
+-   **Czas nieaktywności użytkownika** — liczba minut bezczynności, po której następuje automatyczne wylogowanie. Po wylogowaniu użytkownik loguje się ponownie.
+-   **Liczba nieudanych prób logowania** — próg uruchamiający czasową blokadę.
+-   **Okno czasowe zliczania nieudanych prób logowania** — okres, z którego uwzględniane są błędne próby, podany w minutach.
+-   **Czas blokady konta po przekroczeniu limitu prób** — liczba minut, przez które kolejne logowanie jest blokowane.
+
+![Zrzut ekranu](/img/podrecznik/img-194.png)
+
+Przykład: ustawienie progu 5 prób, okna 15 minut i blokady 15 minut oznacza czasową blokadę po pięciu błędnych próbach w tym okresie. To przykład konfiguracji; obowiązujące wartości sprawdź na ekranie. Zdarzenia związane z logowaniem odszukasz w **Rejestrze logowań** (zob. podrozdział 20.4).
+
+### Blokowanie kont po długiej nieaktywności \{#blokowanie-kont-po-dlugiej-nieaktywnosci}
+
+Parametr **Liczba dni bez poprawnego logowania, po której konto użytkownika zostaje automatycznie zablokowane** znajduje się w grupie **Sesja i logowanie**. Wartość **0 wyłącza blokowanie z powodu nieaktywności**. Przed włączeniem mechanizmu sprawdź, jakie konta nadal wymagają dostępu.
+
+Jeżeli użytkownik zgłasza utratę dostępu, sprawdź przyczynę w Rejestrze logowań oraz stan jego konta. Ponowne włączenie konta i kontrolę jego ważności opisano w podrozdziale 21.5. Nie należy utożsamiać wyłączenia konta z czasową blokadą po błędnych próbach.
+
+## 25.2. Szablony powiadomień \{#sekcja-25-2-szablony-powiadomien}
+
+<Access roles="Administrator Systemu, Gospodarz" />
+
+1.  W menu głównym (po lewej stronie ekranu) wybierz opcję **Ustawienia**.
+2.  Kliknij kafelek Szablony powiadomień.
+3.  System wyświetli listę szablonów powiadomień automatycznych.
+
+![Lista szablonów powiadomień w ustawieniach.](/img/podrecznik/img-195.png)
+
+Szablony określają treść powiadomień związanych ze zdarzeniami w systemie. Własne wiadomości i banery — zob. rozdział 16.
+
+## 25.3. Reguły walidacyjne \{#sekcja-25-3-reguly-walidacyjne}
+
+<Access roles="Administrator Systemu" />
+
+Reguły walidacyjne służą do wyświetlania ostrzeżeń przed przekazaniem zamówienia do realizacji. Wybór **Kontynuuj mimo ostrzeżeń** prowadzi do kolejnego kroku, w którym użytkownik wskazuje adres i datę dostawy. Samo potwierdzenie ostrzeżenia nie przekazuje jeszcze zamówienia.
+
+### Dodawanie reguły \{#dodawanie-reguly}
+
+1.  Wybierz **Ustawienia → Reguły walidacyjne** i kliknij **Dodaj regułę**.
+2.  W polu **Nazwa** wybierz zdarzenie **Zamówienie - przed przekazaniem do realizacji**. W polu **Wiadomość** wpisz treść ostrzeżenia przeznaczonego dla użytkownika.
+
+![Zrzut ekranu](/img/podrecznik/img-196.png)
+
+1.  Kliknij **Zapisz**. Reguła zostaje utworzona ze statusem **Roboczy**, a aplikacja proponuje jej aktywację.
+
+![Zrzut ekranu](/img/podrecznik/img-197.png)
+
+1.  Jeżeli warunki nie są jeszcze przygotowane, wybierz **Anuluj**. Reguła pozostaje zapisana i nieaktywna. Przejdź do zakładki **Warunki**.
+
+### Przygotowanie warunków \{#przygotowanie-warunkow}
+
+1.  W zakładce **Warunki** kliknij **Dodaj warunek**.
+2.  Wybierz **Typ**: Miesiąc albo Procentowe użycie planu budżetowego. Następnie określ **Wartość** i **Operator** porównania dostępny dla danego typu.
+
+![Zrzut ekranu](/img/podrecznik/img-198.png)
+
+1.  Kliknij **Zapisz** i sprawdź pozycję na liście. W razie potrzeby dodaj następny warunek.
+
+![Zrzut ekranu](/img/podrecznik/img-199.png)
+
+Przykład na ilustracji przedstawia warunek typu Miesiąc, o wartości Styczeń i operatorze równa się. Dobierz warunki do celu ostrzeżenia; przed aktywacją sprawdź scenariusze, w których komunikat powinien i nie powinien wystąpić.
+
+### Aktywacja reguły \{#aktywacja-reguly}
+
+1.  Po przygotowaniu wiadomości i warunków wróć do zakładki **Reguła**.
+2.  Kliknij **Aktywuj regułę**, sprawdź komunikat potwierdzenia i wybierz **Aktywuj**.
+3.  Sprawdź status reguły. Następnie zweryfikuj jej działanie na zamówieniu testowym przed użyciem w pracy jednostek.
+
+**Ważne:** aktywacja włącza regułę do działania aplikacji. Nie aktywuj niedokończonej reguły tylko po to, aby zapisać jej treść. Wersję roboczą możesz uzupełnić później.
+
+### Edycja i usuwanie reguły \{#edycja-i-usuwanie-reguly}
+
+Na liście reguł otwórz odpowiedni wiersz lub wybierz **Edytuj** w jego menu. Zmień wiadomość w zakładce **Reguła** i kliknij **Zapisz**. Warunki obsługuj w osobnej zakładce **Warunki**.
+
+Aby usunąć regułę, wybierz **Usuń** z menu jej wiersza, a następnie odczytaj i zatwierdź okno potwierdzenia. **Anuluj** pozostawia regułę bez zmian.
+
+## 25.4. Konfiguracja Menu \{#sekcja-25-4-konfiguracja-menu}
+
+<Access roles="Administrator Systemu, Operator Systemu, Gospodarz" />
+
+W module, którego układ chcesz zmienić, otwórz **Ustawienia** → **Konfiguracja menu**.
+
+Opcja ta umożliwia dostosowanie menu, przeciągając elementy za uchwyt. Dzięki temu można zmieniać ich kolejność oraz przenosić je między sekcjami. Zmiany układu są zapisywane automatycznie w *local storage* przeglądarki, osobno dla modułu.  
+  
+Po zalogowaniu w innej przeglądarce lub na innym urządzeniu zobaczysz domyślny układ menu i będziesz musiał/a skonfigurować na nowo.
+
+![Zrzut ekranu](/img/podrecznik/img-200.png)
+
+1.  Po lewej stronie, w sekcji **Elementy menu**, widoczny jest aktualny układ menu.
+2.  Sekcja **Dostępne elementy** zawiera pozycje, które można dodać do menu. Aby dodać pozycję, przeciągnij ją z sekcji **Dostępne elementy** do sekcji **Elementy menu**. **Narzędzia modułu** i **Narzędzia wspólne** mają własne sekcje.
+3.  Ikona kosza usuwa pozycję z menu, a separator pozwala wizualnie podzielić elementy na grupy.
+4.  Przycisk **Przywróć domyślne menu** przywraca domyślny układ menu. Układ jest zapamiętywany także po ponownym zalogowaniu w tej samej przeglądarce; może go zobaczyć również inne konto używane w niej dla tego samego modułu.
+
+![Zrzut ekranu](/img/podrecznik/img-201.png)
